@@ -160,7 +160,7 @@
             // Choose_No
             // 
             Choose_No.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            Choose_No.Location = new System.Drawing.Point(494, 22);
+            Choose_No.Location = new System.Drawing.Point(494, 23);
             Choose_No.Name = "Choose_No";
             Choose_No.Size = new System.Drawing.Size(85, 34);
             Choose_No.TabIndex = 8;
@@ -171,7 +171,7 @@
             // Choose_Yes
             // 
             Choose_Yes.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            Choose_Yes.Location = new System.Drawing.Point(401, 22);
+            Choose_Yes.Location = new System.Drawing.Point(401, 23);
             Choose_Yes.Name = "Choose_Yes";
             Choose_Yes.Size = new System.Drawing.Size(85, 34);
             Choose_Yes.TabIndex = 8;
@@ -364,6 +364,7 @@
             Controls.Add(button8);
             Controls.Add(button7);
             Name = "Form1";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Welcome to the Coffee Shop";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

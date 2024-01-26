@@ -249,6 +249,7 @@
             Controls.Add(am_numeric);
             Controls.Add(am_coldhot);
             Name = "Americano";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Americano";
             am_coldhot.ResumeLayout(false);
             am_coldhot.PerformLayout();

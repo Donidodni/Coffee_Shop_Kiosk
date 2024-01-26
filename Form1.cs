@@ -36,13 +36,13 @@ namespace Coffee_Shop_Kiosk
         public void move_info()
         {
             Main_info.Text = "원하시는 메뉴를 선택해주세요.";
-            Point move_point = new Point(91, 26);
+            Point move_point = new Point(91, 24);
             Main_info.Location = move_point;
         }
         public void reset_info()
         {
             Main_info.Text = "원하시는 메뉴를 선택해주세요.";
-            Point reset_point = new Point(181, 26);
+            Point reset_point = new Point(181, 24);
             Main_info.Location = reset_point;
         }
         public void Coffee_order_info()

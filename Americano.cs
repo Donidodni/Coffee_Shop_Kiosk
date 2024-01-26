@@ -17,7 +17,6 @@ namespace Coffee_Shop_Kiosk
         public Americano()
         {
             InitializeComponent();
-
         }
 
 
@@ -74,7 +73,6 @@ namespace Coffee_Shop_Kiosk
 
 
 
-
         private void am_numeric_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -92,8 +90,6 @@ namespace Coffee_Shop_Kiosk
             amount = (int)numericUpDown1.Value;
             am_UpdatePrice();
         }
-
-
 
 
 
