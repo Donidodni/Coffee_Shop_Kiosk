@@ -73,8 +73,7 @@ namespace Coffee_Shop_Kiosk
             InitializeComponent();
             Current_time.Enabled = true;
             Choose_Button_off();
-
-            Main_info.Text = "원하시는 메뉴를 선택해주세요.";
+            reset_info();
 
         }
         private void Current_time_Tick(object sender, EventArgs e)
@@ -128,7 +127,7 @@ namespace Coffee_Shop_Kiosk
             Main_info.Text = "모카치노를 주문하시겠습니까?";
 
         }
-        
+
 
 
 
@@ -149,6 +148,11 @@ namespace Coffee_Shop_Kiosk
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Main_info_Click(object sender, EventArgs e)
         {
 
         }
