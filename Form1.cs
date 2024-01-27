@@ -13,8 +13,7 @@ namespace Coffee_Shop_Kiosk
     public partial class Form1 : Form
     {
         static int order_count = 0;
-        static int coffee_menu = 0;
-
+        static int coffee_menus ;
 
 
 
@@ -47,21 +46,31 @@ namespace Coffee_Shop_Kiosk
         }
         public void Coffee_order_info()
         {
-            switch (coffee_menu)
+            switch (coffee_menus)
             {
                 case 1:
                     Americano americano = new Americano();
                     americano.Show();
                     break;
                 case 2:
+                    Latte latte = new Latte();
+                    latte.Show();
                     break;
                 case 3:
+                    Cappuchino cappuchino = new Cappuchino();
+                    cappuchino.Show();
                     break;
                 case 4:
+                    Espresso espresso = new Espresso();
+                    espresso.Show();
                     break;
                 case 5:
+                    SoyLatte soyLatte = new SoyLatte();
+                    soyLatte.Show();
                     break;
                 case 6:
+                    break;
+                default:
                     break;
             }
         }
@@ -88,42 +97,42 @@ namespace Coffee_Shop_Kiosk
         {
             move_info();
             Choose_Button_on();
-            coffee_menu = 1;
+            coffee_menus = 1;
             Main_info.Text = "아메리카노를 주문하시겠습니까?";
         }
         private void button2_Click(object sender, EventArgs e)
         {
             move_info();
             Choose_Button_on();
-            coffee_menu = 2;
+            coffee_menus = 2;
             Main_info.Text = "카페라떼를 주문하시겠습니까?";
         }
         private void button3_Click(object sender, EventArgs e)
         {
             move_info();
             Choose_Button_on();
-            coffee_menu = 3;
+            coffee_menus = 3;
             Main_info.Text = "카푸치노를 주문하시겠습니까?";
         }
         private void button4_Click(object sender, EventArgs e)
         {
             move_info();
             Choose_Button_on();
-            coffee_menu = 4;
+            coffee_menus = 4;
             Main_info.Text = "에스프레소를 주문하시겠습니까?";
         }
         private void button6_Click(object sender, EventArgs e)
         {
             move_info();
             Choose_Button_on();
-            coffee_menu = 5;
+            coffee_menus = 5;
             Main_info.Text = "연유라떼를 주문하시겠습니까?";
         }
         private void button5_Click(object sender, EventArgs e)
         {
             move_info();
             Choose_Button_on();
-            coffee_menu = 6;
+            coffee_menus = 6;
             Main_info.Text = "모카치노를 주문하시겠습니까?";
 
         }
@@ -137,13 +146,12 @@ namespace Coffee_Shop_Kiosk
             Choose_Button_off();
             Coffee_order_info();
             order_count += 1;
-
         }
 
         private void Choose_No_Click(object sender, EventArgs e)
         {
             reset_info();
-            coffee_menu = 0;
+            coffee_menus = 0;
             Choose_Button_off();
         }
 

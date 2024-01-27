@@ -23,7 +23,7 @@ namespace Coffee_Shop_Kiosk
         int am_total_price = 4000;
         int am_options = 0;
         int size = 0;
-        int coldhot = 0;
+        int coldhot_am = 0;
         int amount = 1;
 
 
@@ -31,12 +31,12 @@ namespace Coffee_Shop_Kiosk
         {
             if (am_cold.Checked == true)
             {
-                coldhot = 500;
+                coldhot_am = 500;
                 am_UpdatePrice();
             }
             else
             {
-                coldhot = 0;
+                coldhot_am = 0;
                 am_UpdatePrice();
             }
               
@@ -98,7 +98,7 @@ namespace Coffee_Shop_Kiosk
         private void am_UpdatePrice()
         {
             
-            am_total_value.Text = Convert.ToString((am_total_price - am_options + coldhot + size) * amount);
+            am_total_value.Text = Convert.ToString((am_total_price - am_options + coldhot_am + size) * amount);
             
         }
 
@@ -110,7 +110,11 @@ namespace Coffee_Shop_Kiosk
 
         private void am_cancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("진행중인 주문을 취소합니다.", "주문취소", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                //확인시 내용
+                this.Close();
+            }
         }
     }
 }
