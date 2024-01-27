@@ -101,7 +101,11 @@ namespace Coffee_Shop_Kiosk
 
         private void soy_cancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("진행중인 주문을 취소합니다.", "주문취소", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                //확인시 내용
+                this.Close();
+            }
         }
     }
 }
