@@ -327,11 +327,11 @@
         private System.Windows.Forms.RadioButton am_option3;
         private System.Windows.Forms.RadioButton am_option2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button am_yes;
         private System.Windows.Forms.Button am_cancel;
         private System.Windows.Forms.Label am_total_value;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Button am_yes;
     }
 }

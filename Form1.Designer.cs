@@ -51,6 +51,7 @@
             button1 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             panel3 = new System.Windows.Forms.Panel();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -361,12 +362,22 @@
             panel3.Size = new System.Drawing.Size(943, 440);
             panel3.TabIndex = 9;
             // 
+            // richTextBox1
+            // 
+            richTextBox1.Font = new System.Drawing.Font("Pretendard SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            richTextBox1.Location = new System.Drawing.Point(44, 590);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new System.Drawing.Size(940, 155);
+            richTextBox1.TabIndex = 10;
+            richTextBox1.Text = "";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             ClientSize = new System.Drawing.Size(1514, 841);
+            Controls.Add(richTextBox1);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -408,5 +419,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
+        public System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

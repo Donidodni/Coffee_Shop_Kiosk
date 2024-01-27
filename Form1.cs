@@ -8,15 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace Coffee_Shop_Kiosk
 {
     public partial class Form1 : Form
-    {
-        static int order_count = 0;
+    { 
         static int coffee_menus;
 
-
+        public void Form2(string data)
+        {
+            InitializeComponent();
+            richTextBox1.Text = data;
+        }
 
         public void Choose_Button_on()
         {
@@ -40,7 +44,7 @@ namespace Coffee_Shop_Kiosk
             switch (coffee_menus)
             {
                 case 1:
-                    Americano americano = new Americano();
+                    Americano americano = new Americano(this);
                     americano.Show();
                     break;
                 case 2:
@@ -75,17 +79,12 @@ namespace Coffee_Shop_Kiosk
 
 
 
-
-
-
-
-
-
         public Form1()
         {
             InitializeComponent();
             Current_time.Enabled = true;
             Choose_Button_off();
+            
 
             Main_info.Text = "원하시는 메뉴를 \n선택해주세요.";
 
@@ -146,7 +145,6 @@ namespace Coffee_Shop_Kiosk
         {
             Choose_Button_off();
             Coffee_order_info();
-            order_count += 1;
         }
 
         private void Choose_No_Click(object sender, EventArgs e)
