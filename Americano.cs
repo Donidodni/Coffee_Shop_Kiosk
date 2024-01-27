@@ -15,11 +15,11 @@ namespace Coffee_Shop_Kiosk
     public partial class Americano : Form
     {
 
-        Form1 f = null;
+        Form1 form = null;
         public Americano(Form1 form1)
         {
             InitializeComponent();
-            f = form1;
+            form = form1;
         }
 
 
@@ -133,7 +133,7 @@ namespace Coffee_Shop_Kiosk
 
         private void am_yes_Click(object sender, EventArgs e)
         {
-            f.richTextBox1.Text += am_order();
+            form.richTextBox1.Text += am_order();
             this.Close();
         }
 
@@ -141,7 +141,6 @@ namespace Coffee_Shop_Kiosk
         {
             if (MessageBox.Show("진행중인 주문을 취소합니다.", "주문취소", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                //확인시 내용
                 this.Close();
             }
         }

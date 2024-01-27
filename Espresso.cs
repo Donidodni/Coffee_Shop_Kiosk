@@ -13,7 +13,7 @@ namespace Coffee_Shop_Kiosk
 {
     public partial class Espresso : Form
     {
-        public Espresso()
+        public Espresso(Form1 form1)
         {
             InitializeComponent();
         }
@@ -23,11 +23,6 @@ namespace Coffee_Shop_Kiosk
         int es_options = 0;
         int es_sizes = 0;
         int es_amounts = 1;
-
-
-
-
-
 
 
         private void es_option1_CheckedChanged(object sender, EventArgs e)

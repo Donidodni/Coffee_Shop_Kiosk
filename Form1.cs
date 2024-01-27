@@ -13,32 +13,27 @@ using static System.Windows.Forms.DataFormats;
 namespace Coffee_Shop_Kiosk
 {
     public partial class Form1 : Form
-    { 
+    {
         static int coffee_menus;
 
-        public void Form2(string data)
-        {
-            InitializeComponent();
-            richTextBox1.Text = data;
-        }
 
         public void Choose_Button_on()
         {
-            Choose_Yes.Visible = true;
-            Choose_No.Visible = true;
-            Choose_Yes.Enabled = true;
-            Choose_No.Enabled = true;
+            Choose_Yes.Visible = true; Choose_No.Visible = true;
+
+            Choose_Yes.Enabled = true; Choose_No.Enabled = true;
+
         }
 
         public void Choose_Button_off()
         {
-            Choose_Yes.Visible = false;
-            Choose_No.Visible = false;
-            Choose_Yes.Enabled = false;
-            Choose_No.Enabled = false;
+            Choose_Yes.Visible = false; Choose_No.Visible = false;
+
+            Choose_Yes.Enabled = false; Choose_No.Enabled = false;
+
         }
 
-   
+
         public void Coffee_order_info()
         {
             switch (coffee_menus)
@@ -48,24 +43,28 @@ namespace Coffee_Shop_Kiosk
                     americano.Show();
                     break;
                 case 2:
-                    Latte latte = new Latte();
+                    Latte latte = new Latte(this);
                     latte.Show();
                     break;
                 case 3:
-                    Cappuchino cappuchino = new Cappuchino();
+                    Cappuchino cappuchino = new Cappuchino(this);
                     cappuchino.Show();
                     break;
                 case 4:
-                    Espresso espresso = new Espresso();
+                    Espresso espresso = new Espresso(this);
                     espresso.Show();
                     break;
                 case 5:
-                    SoyLatte soyLatte = new SoyLatte();
+                    SoyLatte soyLatte = new SoyLatte(this);
                     soyLatte.Show();
                     break;
                 case 6:
-                    Mocha mocha = new Mocha();
+                    Mocha mocha = new Mocha(this);
                     mocha.Show();
+                    break;
+                case 99:
+                    Exit exit = new Exit(this);
+                    exit.Show();
                     break;
                 default:
                     break;
@@ -84,7 +83,7 @@ namespace Coffee_Shop_Kiosk
             InitializeComponent();
             Current_time.Enabled = true;
             Choose_Button_off();
-            
+
 
             Main_info.Text = "원하시는 메뉴를 \n선택해주세요.";
 
@@ -95,6 +94,12 @@ namespace Coffee_Shop_Kiosk
         private void Current_time_Tick(object sender, EventArgs e)
         {
             time_value.Text = DateTime.Now.ToString();
+            if (DateTime.Now.Second <= 30)          
+                ad_box.Image = ad_images.Images[0]; 
+
+            else
+                ad_box.Image = ad_images.Images[1];
+
         }
 
 
@@ -166,11 +171,15 @@ namespace Coffee_Shop_Kiosk
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("종료하시겠습니까?", "종료", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                //확인시 내용
-                this.Close();
-            }
+            Exit exit = new(this);
+            exit.Show();
+        }
+
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            Reset_info();
+            Choose_Button_off();
         }
     }
 }

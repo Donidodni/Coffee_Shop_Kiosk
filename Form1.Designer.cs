@@ -52,9 +52,12 @@
             button2 = new System.Windows.Forms.Button();
             panel3 = new System.Windows.Forms.Panel();
             richTextBox1 = new System.Windows.Forms.RichTextBox();
+            ad_box = new System.Windows.Forms.PictureBox();
+            ad_images = new System.Windows.Forms.ImageList(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ad_box).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -114,9 +117,10 @@
             button10.BackColor = System.Drawing.Color.MediumTurquoise;
             button10.BackgroundImage = (System.Drawing.Image)resources.GetObject("button10.BackgroundImage");
             button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            button10.Cursor = System.Windows.Forms.Cursors.Hand;
             button10.FlatAppearance.BorderSize = 0;
             button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button10.Location = new System.Drawing.Point(851, 29);
+            button10.Location = new System.Drawing.Point(1456, 33);
             button10.Name = "button10";
             button10.Size = new System.Drawing.Size(30, 30);
             button10.TabIndex = 10;
@@ -130,7 +134,7 @@
             button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             button9.FlatAppearance.BorderSize = 0;
             button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button9.Location = new System.Drawing.Point(806, 29);
+            button9.Location = new System.Drawing.Point(1411, 33);
             button9.Name = "button9";
             button9.Size = new System.Drawing.Size(30, 30);
             button9.TabIndex = 10;
@@ -142,7 +146,7 @@
             time_value.BackColor = System.Drawing.Color.Transparent;
             time_value.Font = new System.Drawing.Font("Pretendard SemiBold", 19.8000011F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             time_value.ForeColor = System.Drawing.Color.Transparent;
-            time_value.Location = new System.Drawing.Point(1064, 24);
+            time_value.Location = new System.Drawing.Point(746, 25);
             time_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             time_value.Name = "time_value";
             time_value.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -156,7 +160,7 @@
             label_time.BackColor = System.Drawing.Color.Transparent;
             label_time.Font = new System.Drawing.Font("Pretendard SemiBold", 19.8000011F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label_time.ForeColor = System.Drawing.Color.Transparent;
-            label_time.Location = new System.Drawing.Point(899, 24);
+            label_time.Location = new System.Drawing.Point(581, 25);
             label_time.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label_time.Name = "label_time";
             label_time.Size = new System.Drawing.Size(142, 41);
@@ -184,6 +188,7 @@
             // Choose_No
             // 
             Choose_No.BackColor = System.Drawing.Color.White;
+            Choose_No.Cursor = System.Windows.Forms.Cursors.Hand;
             Choose_No.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             Choose_No.Font = new System.Drawing.Font("Pretendard", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Choose_No.Location = new System.Drawing.Point(199, 309);
@@ -198,6 +203,7 @@
             // Choose_Yes
             // 
             Choose_Yes.BackColor = System.Drawing.Color.White;
+            Choose_Yes.Cursor = System.Windows.Forms.Cursors.Hand;
             Choose_Yes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             Choose_Yes.Font = new System.Drawing.Font("Pretendard", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Choose_Yes.Location = new System.Drawing.Point(47, 309);
@@ -227,7 +233,7 @@
             panel2.Controls.Add(Choose_No);
             panel2.Controls.Add(Choose_Yes);
             panel2.Controls.Add(Main_info);
-            panel2.Location = new System.Drawing.Point(1001, 129);
+            panel2.Location = new System.Drawing.Point(1045, 129);
             panel2.Margin = new System.Windows.Forms.Padding(4);
             panel2.Name = "panel2";
             panel2.Size = new System.Drawing.Size(364, 382);
@@ -236,6 +242,7 @@
             // button6
             // 
             button6.BackColor = System.Drawing.Color.White;
+            button6.Cursor = System.Windows.Forms.Cursors.Hand;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button6.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -255,6 +262,7 @@
             // button5
             // 
             button5.BackColor = System.Drawing.Color.White;
+            button5.Cursor = System.Windows.Forms.Cursors.Hand;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button5.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -274,6 +282,7 @@
             // button3
             // 
             button3.BackColor = System.Drawing.Color.White;
+            button3.Cursor = System.Windows.Forms.Cursors.Hand;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button3.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -293,6 +302,7 @@
             // button4
             // 
             button4.BackColor = System.Drawing.Color.White;
+            button4.Cursor = System.Windows.Forms.Cursors.Hand;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button4.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -313,6 +323,7 @@
             // 
             button1.BackColor = System.Drawing.Color.White;
             button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            button1.Cursor = System.Windows.Forms.Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button1.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -332,6 +343,7 @@
             // button2
             // 
             button2.BackColor = System.Drawing.Color.White;
+            button2.Cursor = System.Windows.Forms.Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button2.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -365,11 +377,28 @@
             // richTextBox1
             // 
             richTextBox1.Font = new System.Drawing.Font("Pretendard SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            richTextBox1.Location = new System.Drawing.Point(44, 590);
+            richTextBox1.Location = new System.Drawing.Point(44, 562);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new System.Drawing.Size(940, 155);
+            richTextBox1.Size = new System.Drawing.Size(940, 228);
             richTextBox1.TabIndex = 10;
             richTextBox1.Text = "";
+            // 
+            // ad_box
+            // 
+            ad_box.Location = new System.Drawing.Point(1045, 562);
+            ad_box.Name = "ad_box";
+            ad_box.Size = new System.Drawing.Size(364, 228);
+            ad_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            ad_box.TabIndex = 11;
+            ad_box.TabStop = false;
+            // 
+            // ad_images
+            // 
+            ad_images.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            ad_images.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("ad_images.ImageStream");
+            ad_images.TransparentColor = System.Drawing.Color.Transparent;
+            ad_images.Images.SetKeyName(0, "ad1.png");
+            ad_images.Images.SetKeyName(1, "ad2.png");
             // 
             // Form1
             // 
@@ -377,6 +406,7 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             ClientSize = new System.Drawing.Size(1514, 841);
+            Controls.Add(ad_box);
             Controls.Add(richTextBox1);
             Controls.Add(panel3);
             Controls.Add(panel2);
@@ -388,11 +418,13 @@
             Name = "Form1";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Welcome to the Coffee Shop";
+            Click += Form1_Click;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ad_box).EndInit();
             ResumeLayout(false);
         }
 
@@ -420,5 +452,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         public System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.PictureBox ad_box;
+        private System.Windows.Forms.ImageList ad_images;
     }
 }

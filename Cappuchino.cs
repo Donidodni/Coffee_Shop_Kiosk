@@ -13,7 +13,7 @@ namespace Coffee_Shop_Kiosk
 {
     public partial class Cappuchino : Form
     {
-        public Cappuchino()
+        public Cappuchino(Form1 form1)
         {
             InitializeComponent();
         }

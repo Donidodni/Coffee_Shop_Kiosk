@@ -12,7 +12,7 @@ namespace Coffee_Shop_Kiosk
 {
     public partial class SoyLatte : Form
     {
-        public SoyLatte()
+        public SoyLatte(Form1 form1)
         {
             InitializeComponent();
         }

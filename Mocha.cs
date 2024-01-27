@@ -12,7 +12,7 @@ namespace Coffee_Shop_Kiosk
 {
     public partial class Mocha : Form
     {
-        public Mocha()
+        public Mocha(Form1 form1)
         {
             InitializeComponent();
         }

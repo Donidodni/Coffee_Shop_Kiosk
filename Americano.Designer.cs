@@ -63,7 +63,7 @@
             am_hot.Location = new System.Drawing.Point(250, 115);
             am_hot.Margin = new System.Windows.Forms.Padding(4);
             am_hot.Name = "am_hot";
-            am_hot.Padding = new System.Windows.Forms.Padding(21, 0, 25, 0);
+            am_hot.Padding = new System.Windows.Forms.Padding(25, 0, 21, 0);
             am_hot.Size = new System.Drawing.Size(157, 39);
             am_hot.TabIndex = 1;
             am_hot.TabStop = true;
