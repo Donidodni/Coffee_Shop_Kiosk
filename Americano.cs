@@ -22,21 +22,23 @@ namespace Coffee_Shop_Kiosk
             form = form1;
         }
 
-        
+
         int am_total_price = 4000;
-        static int am_options , am_options_number,size, coldhot_am ;
+        static int am_options, size, coldhot_am;
         static int amount = 1;
-        
+
 
         private void am_cold_CheckedChanged(object sender, EventArgs e)
         {
             if (am_cold.Checked == true)
             {
+                am_hot.BackColor = Color.LightGray;
                 coldhot_am = 500;
                 am_UpdatePrice();
             }
             else
             {
+                am_hot.BackColor = Color.White;
                 coldhot_am = 0;
                 am_UpdatePrice();
             }
@@ -45,32 +47,55 @@ namespace Coffee_Shop_Kiosk
 
         private void am_hot_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (am_hot.Checked)
+            {
+                am_hot.BackColor = Color.LightGray;
+            }
+            else
+            {
+                am_hot.BackColor = Color.White;
+            }
         }
 
 
 
         private void am_option1_CheckedChanged(object sender, EventArgs e)
         {
-            am_options_number = 1;
-            am_UpdatePrice();
+            if (am_option1.Checked)
+            {
+                am_option1.BackColor = Color.LightGray;
+            }
+            else
+            {
+                am_option1.BackColor = Color.White;
+            }
         }
 
         private void am_option2_CheckedChanged(object sender, EventArgs e)
         {
-            am_options_number = 2;
-            am_UpdatePrice();
+            if (am_option2.Checked)
+            {
+                am_option2.BackColor = Color.LightGray;
+            }
+            else
+            {
+                am_option2.BackColor = Color.White;
+            }
         }
 
         private void am_option3_CheckedChanged(object sender, EventArgs e)
         {
             if (am_option3.Checked == true)
             {
-                am_options_number = 3;
+                am_option2.BackColor = Color.LightGray;
                 am_options = 300;
             }
             else
+            {
+                am_option2.BackColor = Color.White;
                 am_options = 0;
+
+            }
             am_UpdatePrice();
         }
 
@@ -94,16 +119,16 @@ namespace Coffee_Shop_Kiosk
         }
 
 
-        
+
         public void am_UpdatePrice()
         {
             am_total_value.Text = Convert.ToString((am_total_price - am_options + coldhot_am + size) * amount);
         }
-       
+
         private void am_yes_Click(object sender, EventArgs e)
         {
 
-            ListViewItem order = new ListViewItem(new string[] { "아메리카노 ", Convert.ToString(amount) + "잔 ", Convert.ToString(am_total_value.Text)  });
+            ListViewItem order = new ListViewItem(new string[] { "아메리카노 ", Convert.ToString(amount) + "잔 ", Convert.ToString(am_total_value.Text) });
             form.order_list.Items.Add(order);
             form.Reset_info();
             this.Close();

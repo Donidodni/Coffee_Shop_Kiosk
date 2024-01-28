@@ -34,7 +34,7 @@ namespace Coffee_Shop_Kiosk
 
         private void pay_yes_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("결제 완료");
+            MessageBox.Show("결제가 완료되었습니다.", "결제 완료");
             form.order_list.Clear();
             this.Close();
         }

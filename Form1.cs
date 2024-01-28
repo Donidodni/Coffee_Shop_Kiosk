@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Linq;
 using System.Reflection;
@@ -25,7 +26,8 @@ namespace Coffee_Shop_Kiosk
             Choose_Yes.Visible = true; Choose_No.Visible = true;
 
             Choose_Yes.Enabled = true; Choose_No.Enabled = true;
-
+            Point point = new Point(66, 80);
+            Main_info.Location = point;
         }
 
         public void Choose_Button_off()
@@ -65,16 +67,14 @@ namespace Coffee_Shop_Kiosk
                     Mocha mocha = new Mocha(this);
                     mocha.Show();
                     break;
-                case 99:
-                    Exit exit = new Exit(this);
-                    exit.Show();
-                    break;
                 default:
                     break;
             }
         }
         public void Reset_info()
         {
+            Point point = new Point(76, 80);
+            Main_info.Location = point;
             Main_info.Text = "원하시는 메뉴를 \n선택해주세요.";
         }
 
@@ -198,9 +198,8 @@ namespace Coffee_Shop_Kiosk
             try
             {
                 if (order_list.FocusedItem == null)
-                {
                     throw new Exception();
-                }
+
                 int index = order_list.FocusedItem.Index;
                 order_list.Items.RemoveAt(index);
             }

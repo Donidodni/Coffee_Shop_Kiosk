@@ -401,7 +401,7 @@
             pay_button.BackColor = System.Drawing.Color.White;
             pay_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             pay_button.Font = new System.Drawing.Font("Pretendard SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            pay_button.Location = new System.Drawing.Point(879, 587);
+            pay_button.Location = new System.Drawing.Point(876, 587);
             pay_button.Name = "pay_button";
             pay_button.Size = new System.Drawing.Size(172, 83);
             pay_button.TabIndex = 12;
@@ -441,7 +441,7 @@
             cancel_button.BackColor = System.Drawing.Color.White;
             cancel_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cancel_button.Font = new System.Drawing.Font("Pretendard SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            cancel_button.Location = new System.Drawing.Point(879, 697);
+            cancel_button.Location = new System.Drawing.Point(876, 697);
             cancel_button.Name = "cancel_button";
             cancel_button.Size = new System.Drawing.Size(172, 83);
             cancel_button.TabIndex = 12;
