@@ -181,7 +181,7 @@
             Main_info.AutoSize = true;
             Main_info.BackColor = System.Drawing.Color.Transparent;
             Main_info.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            Main_info.Location = new System.Drawing.Point(67, 80);
+            Main_info.Location = new System.Drawing.Point(76, 80);
             Main_info.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             Main_info.Name = "Main_info";
             Main_info.Size = new System.Drawing.Size(153, 36);
