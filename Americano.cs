@@ -15,7 +15,7 @@ namespace Coffee_Shop_Kiosk
     public partial class Americano : Form
     {
 
-        Form1 form = null;
+        Form1? form = null;
         public Americano(Form1 form1)
         {
             InitializeComponent();
@@ -30,33 +30,6 @@ namespace Coffee_Shop_Kiosk
         int coldhot_am = 0;
         int amount = 1;
 
-
-        public string am_order()
-        {
-            string order = null;
-
-            if (coldhot_am == 500) order += " 아이스";
-            else order += " ";
-
-
-            order += " 아메리카노";
-            order += am_total_price + " 원 ";
-            order += Convert.ToString(amount + "개" + "");
-            return order+"\n";
-            /*
-            if (am_options_number == 1) order += " 일회용기,";
-            else if (am_options_number == 2) order += " 매장,";
-            else order += " 텀블러,";
-
-            
-            if (am_numeric.SelectedIndex == 0) order += " 작은컵 \n";
-            else if (am_numeric.SelectedIndex == 1) order += " 중간컵 \n";
-            else order += " 큰컵, \n";
-            */
-
-
-
-        }
 
         private void am_cold_CheckedChanged(object sender, EventArgs e)
         {
@@ -126,9 +99,34 @@ namespace Coffee_Shop_Kiosk
         }
 
 
-        private void am_UpdatePrice()
+        public void am_UpdatePrice()
         {
-            am_total_value.Text = Convert.ToString((am_total_price - am_options + coldhot_am + size) * amount);
+            am_total_price = (am_total_price - am_options + coldhot_am + size) * amount;
+            am_total_value.Text = Convert.ToString(am_total_price);
+        }
+        public string am_order()
+        {
+            string order = null;
+
+            if (coldhot_am == 500) order += " 아이스";
+            else order += " ";
+
+
+            order += " 아메리카노";
+            order += am_total_price + " 원 ";
+            order += Convert.ToString(amount + "개" + "");
+            return order + "\n";
+            /*
+            if (am_options_number == 1) order += " 일회용기,";
+            else if (am_options_number == 2) order += " 매장,";
+            else order += " 텀블러,";
+
+            
+            if (am_numeric.SelectedIndex == 0) order += " 작은컵 \n";
+            else if (am_numeric.SelectedIndex == 1) order += " 중간컵 \n";
+            else order += " 큰컵, \n";
+            */
+
         }
 
         private void am_yes_Click(object sender, EventArgs e)

@@ -12,9 +12,11 @@ namespace Coffee_Shop_Kiosk
 {
     public partial class Mocha : Form
     {
+        Form1 form = null;
         public Mocha(Form1 form1)
         {
             InitializeComponent();
+            form = form1;
         }
 
         int mo_total_price = 4500;
@@ -117,9 +119,34 @@ namespace Coffee_Shop_Kiosk
 
         }
 
+        public string mo_order()
+        {
+            string order = null;
+
+            if (coldhot_mo == 500) order += " 아이스";
+            else order += " ";
+
+
+            order += " 모카치노"+ mo_total_price + " 원 "+ mo_amounts + "개";
+
+            return order + "\n";
+            /*
+            if (am_options_number == 1) order += " 일회용기,";
+            else if (am_options_number == 2) order += " 매장,";
+            else order += " 텀블러,";
+
+            
+            if (am_numeric.SelectedIndex == 0) order += " 작은컵 \n";
+            else if (am_numeric.SelectedIndex == 1) order += " 중간컵 \n";
+            else order += " 큰컵, \n";
+            */
+
+        }
+
         private void mo_yes_Click(object sender, EventArgs e)
         {
-
+            form.richTextBox1.Text += mo_order();
+            this.Close();
         }
 
         private void mo_cancel_Click(object sender, EventArgs e)

@@ -13,10 +13,15 @@ namespace Coffee_Shop_Kiosk
 {
     public partial class Latte : Form
     {
+
+        Form1 form = null;
         public Latte(Form1 form1)
         {
             InitializeComponent();
+            form = form1;
         }
+
+
         int la_total_price = 4500;
         int la_options = 0;
         int la_coldhot_options = 0;
@@ -25,18 +30,27 @@ namespace Coffee_Shop_Kiosk
 
         private void la_hot_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (la_hot.Checked)
+            {
+                la_hot.BackColor = Color.LightGray;
+            }
+            else
+            {
+                la_hot.BackColor = Color.White;
+            }
         }
 
         private void la_cold_CheckedChanged(object sender, EventArgs e)
         {
             if (la_cold.Checked == true)
             {
+                la_cold.BackColor = Color.LightGray;
                 la_coldhot_options = 500;
                 la_UpdatePrice();
             }
             else
             {
+                la_cold.BackColor = Color.White;
                 la_coldhot_options = 0;
                 la_UpdatePrice();
             }
@@ -45,22 +59,41 @@ namespace Coffee_Shop_Kiosk
 
         private void la_option1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (la_option1.Checked)
+            {
+                la_option1.BackColor = Color.LightGray;
+            }
+            else
+            {
+                la_option1.BackColor = Color.White;
+            }
         }
 
         private void la_option2_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (la_option2.Checked)
+            {
+                la_option2.BackColor = Color.LightGray;
+            }
+            else
+            {
+                la_option2.BackColor = Color.White;
+            }
         }
 
         private void la_option3_CheckedChanged(object sender, EventArgs e)
         {
             if (la_option3.Checked == true)
             {
+                la_option3.BackColor = Color.LightGray;
                 la_options = 300;
             }
             else
+            {
+                la_option3.BackColor = Color.White;
                 la_options = 0;
+            }
+            
             la_UpdatePrice();
         }
 
@@ -77,6 +110,7 @@ namespace Coffee_Shop_Kiosk
                 la_sizes = 1000;
             la_UpdatePrice();
         }
+
         private void la_amount_ValueChanged(object sender, EventArgs e)
         {
             la_amounts = (int)la_amount.Value;
@@ -85,14 +119,34 @@ namespace Coffee_Shop_Kiosk
 
         private void la_UpdatePrice()
         {
-
             la_total_value.Text = Convert.ToString((la_total_price - la_options + la_coldhot_options + la_sizes) * la_amounts);
+        }
+        public string la_order()
+        {
+            string order = null;
+
+            if (la_coldhot_options == 500) order += " 아이스";
+            else order += " ";
+
+
+            order += " 카페라떼"+ la_total_price + " 원 "+ la_amounts + "개" + "\n";
+            return order ;
+            /*
+            if (am_options_number == 1) order += " 일회용기,";
+            else if (am_options_number == 2) order += " 매장,";
+            else order += " 텀블러,";
+
+            
+            if (am_numeric.SelectedIndex == 0) order += " 작은컵 \n";
+            else if (am_numeric.SelectedIndex == 1) order += " 중간컵 \n";
+            else order += " 큰컵, \n";
+            */
 
         }
-
         private void la_yes_Click(object sender, EventArgs e)
         {
-
+            form.richTextBox1.Text += la_order();
+            this.Close();
         }
 
         private void la_cancel_Click(object sender, EventArgs e)
