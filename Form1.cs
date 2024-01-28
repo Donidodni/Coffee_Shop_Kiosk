@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,8 @@ namespace Coffee_Shop_Kiosk
     public partial class Form1 : Form
     {
         static int coffee_menus;
+        public string[,] Main_orders = null;
+
 
 
         public void Choose_Button_on()
@@ -83,7 +86,7 @@ namespace Coffee_Shop_Kiosk
             InitializeComponent();
             Current_time.Enabled = true;
             Choose_Button_off();
-
+            order_list.View = View.Details;
 
             Main_info.Text = "원하시는 메뉴를 \n선택해주세요.";
 
@@ -94,8 +97,8 @@ namespace Coffee_Shop_Kiosk
         private void Current_time_Tick(object sender, EventArgs e)
         {
             time_value.Text = DateTime.Now.ToString();
-            if (DateTime.Now.Second <= 30)          
-                ad_box.Image = ad_images.Images[0]; 
+            if (DateTime.Now.Second <= 30)
+                ad_box.Image = ad_images.Images[0];
 
             else
                 ad_box.Image = ad_images.Images[1];
@@ -180,6 +183,25 @@ namespace Coffee_Shop_Kiosk
         {
             Reset_info();
             Choose_Button_off();
+        }
+
+
+        private void pay_button_Click(object sender, EventArgs e)
+        {
+            Pay_Form pay = new Pay_Form(this);
+            pay.Show();
+        }
+
+        private void cancel_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                order_list.Items.RemoveAt(order_list.FocusedItem.Index);
+            
+            }catch (Exception exp)
+            {
+                MessageBox.Show("주문한 메뉴를 선택해주세요.");
+            }
         }
     }
 }

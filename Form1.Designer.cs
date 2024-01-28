@@ -51,9 +51,14 @@
             button1 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             panel3 = new System.Windows.Forms.Panel();
-            richTextBox1 = new System.Windows.Forms.RichTextBox();
             ad_box = new System.Windows.Forms.PictureBox();
             ad_images = new System.Windows.Forms.ImageList(components);
+            pay_button = new System.Windows.Forms.Button();
+            order_list = new System.Windows.Forms.ListView();
+            menu = new System.Windows.Forms.ColumnHeader();
+            amount = new System.Windows.Forms.ColumnHeader();
+            price = new System.Windows.Forms.ColumnHeader();
+            cancel_button = new System.Windows.Forms.Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -233,10 +238,10 @@
             panel2.Controls.Add(Choose_No);
             panel2.Controls.Add(Choose_Yes);
             panel2.Controls.Add(Main_info);
-            panel2.Location = new System.Drawing.Point(1045, 129);
+            panel2.Location = new System.Drawing.Point(1079, 129);
             panel2.Margin = new System.Windows.Forms.Padding(4);
             panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(364, 382);
+            panel2.Size = new System.Drawing.Size(364, 403);
             panel2.TabIndex = 8;
             // 
             // button6
@@ -371,21 +376,12 @@
             panel3.Controls.Add(button4);
             panel3.Location = new System.Drawing.Point(41, 114);
             panel3.Name = "panel3";
-            panel3.Size = new System.Drawing.Size(943, 440);
+            panel3.Size = new System.Drawing.Size(1010, 440);
             panel3.TabIndex = 9;
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.Font = new System.Drawing.Font("Pretendard SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            richTextBox1.Location = new System.Drawing.Point(44, 562);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new System.Drawing.Size(940, 228);
-            richTextBox1.TabIndex = 10;
-            richTextBox1.Text = "";
             // 
             // ad_box
             // 
-            ad_box.Location = new System.Drawing.Point(1045, 562);
+            ad_box.Location = new System.Drawing.Point(1079, 562);
             ad_box.Name = "ad_box";
             ad_box.Size = new System.Drawing.Size(364, 228);
             ad_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -400,14 +396,68 @@
             ad_images.Images.SetKeyName(0, "ad1.png");
             ad_images.Images.SetKeyName(1, "ad2.png");
             // 
+            // pay_button
+            // 
+            pay_button.BackColor = System.Drawing.Color.White;
+            pay_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            pay_button.Font = new System.Drawing.Font("Pretendard SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            pay_button.Location = new System.Drawing.Point(879, 587);
+            pay_button.Name = "pay_button";
+            pay_button.Size = new System.Drawing.Size(172, 83);
+            pay_button.TabIndex = 12;
+            pay_button.Text = "결재하기";
+            pay_button.UseVisualStyleBackColor = false;
+            pay_button.Click += pay_button_Click;
+            // 
+            // order_list
+            // 
+            order_list.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { menu, amount, price });
+            order_list.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            order_list.HideSelection = false;
+            order_list.Location = new System.Drawing.Point(44, 574);
+            order_list.Name = "order_list";
+            order_list.Size = new System.Drawing.Size(799, 216);
+            order_list.TabIndex = 13;
+            order_list.UseCompatibleStateImageBehavior = false;
+            // 
+            // menu
+            // 
+            menu.Text = "메뉴";
+            menu.Width = 312;
+            // 
+            // amount
+            // 
+            amount.Text = "개수";
+            amount.Width = 222;
+            // 
+            // price
+            // 
+            price.Text = "가격";
+            price.Width = 222;
+            // 
+            // cancel_button
+            // 
+            cancel_button.BackColor = System.Drawing.Color.White;
+            cancel_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            cancel_button.Font = new System.Drawing.Font("Pretendard SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            cancel_button.Location = new System.Drawing.Point(879, 697);
+            cancel_button.Name = "cancel_button";
+            cancel_button.Size = new System.Drawing.Size(172, 83);
+            cancel_button.TabIndex = 12;
+            cancel_button.Text = "취소하기";
+            cancel_button.UseVisualStyleBackColor = false;
+            cancel_button.Click += cancel_button_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             ClientSize = new System.Drawing.Size(1514, 841);
+            Controls.Add(order_list);
+            Controls.Add(cancel_button);
+            Controls.Add(pay_button);
             Controls.Add(ad_box);
-            Controls.Add(richTextBox1);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -451,8 +501,14 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
-        public System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.PictureBox ad_box;
         private System.Windows.Forms.ImageList ad_images;
+        private System.Windows.Forms.Button pay_button;
+        public System.Windows.Forms.ListView order_list;
+        private System.Windows.Forms.ColumnHeader menu;
+        private System.Windows.Forms.ColumnHeader amount;
+        private System.Windows.Forms.ColumnHeader price;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button cancel_button;
     }
 }

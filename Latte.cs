@@ -22,7 +22,7 @@ namespace Coffee_Shop_Kiosk
         }
 
 
-        int la_total_price = 4500;
+        int la_total_price = 4000;
         int la_options = 0;
         int la_coldhot_options = 0;
         int la_sizes = 0;
@@ -93,7 +93,7 @@ namespace Coffee_Shop_Kiosk
                 la_option3.BackColor = Color.White;
                 la_options = 0;
             }
-            
+
             la_UpdatePrice();
         }
 
@@ -121,31 +121,12 @@ namespace Coffee_Shop_Kiosk
         {
             la_total_value.Text = Convert.ToString((la_total_price - la_options + la_coldhot_options + la_sizes) * la_amounts);
         }
-        public string la_order()
-        {
-            string order = null;
 
-            if (la_coldhot_options == 500) order += " 아이스";
-            else order += " ";
-
-
-            order += " 카페라떼"+ la_total_price + " 원 "+ la_amounts + "개" + "\n";
-            return order ;
-            /*
-            if (am_options_number == 1) order += " 일회용기,";
-            else if (am_options_number == 2) order += " 매장,";
-            else order += " 텀블러,";
-
-            
-            if (am_numeric.SelectedIndex == 0) order += " 작은컵 \n";
-            else if (am_numeric.SelectedIndex == 1) order += " 중간컵 \n";
-            else order += " 큰컵, \n";
-            */
-
-        }
         private void la_yes_Click(object sender, EventArgs e)
         {
-            form.richTextBox1.Text += la_order();
+            ListViewItem order = new ListViewItem(new string[] { "카페라떼 ", Convert.ToString(la_amounts) + "잔 ", Convert.ToString(la_total_value.Text) });
+            form.order_list.Items.Add(order);
+            form.Reset_info();
             this.Close();
         }
 
@@ -153,7 +134,7 @@ namespace Coffee_Shop_Kiosk
         {
             if (MessageBox.Show("진행중인 주문을 취소합니다.", "주문취소", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                //확인시 내용
+                form.Reset_info();
                 this.Close();
             }
         }

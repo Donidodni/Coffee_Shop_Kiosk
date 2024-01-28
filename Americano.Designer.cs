@@ -100,7 +100,8 @@
             am_numeric.Name = "am_numeric";
             am_numeric.Size = new System.Drawing.Size(197, 35);
             am_numeric.TabIndex = 1;
-            am_numeric.Text = "사이즈를 고르세요.";
+            am_numeric.Text = "사이즈를 선택하세요.";
+            am_numeric.UseWaitCursor = true;
             am_numeric.SelectedIndexChanged += am_numeric_SelectedIndexChanged;
             // 
             // pictureBox1

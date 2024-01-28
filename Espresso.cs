@@ -25,12 +25,19 @@ namespace Coffee_Shop_Kiosk
         int es_options = 0;
         int es_sizes = 0;
         int es_amounts = 1;
-        int es_alert = 0;
+
 
 
         private void es_option1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (es_option1.Checked)
+            {
+                es_option1.BackColor = Color.LightGray;
+            }
+            else
+            {
+                es_option1.BackColor = Color.White;
+            }
         }
 
         private void es_option2_CheckedChanged(object sender, EventArgs e)
@@ -42,10 +49,14 @@ namespace Coffee_Shop_Kiosk
         {
             if (es_option3.Checked == true)
             {
+                es_option1.BackColor = Color.LightGray;
                 es_options = 300;
             }
             else
+            {
+                es_option1.BackColor = Color.White;
                 es_options = 0;
+            }
             es_UpdatePrice();
         }
 
@@ -59,8 +70,7 @@ namespace Coffee_Shop_Kiosk
                 es_sizes = 300;
             else if (es_size.SelectedIndex == 2)
                 es_sizes = 600;
-            else
-                es_alert = 1;
+
             es_UpdatePrice();
         }
 
@@ -97,13 +107,9 @@ namespace Coffee_Shop_Kiosk
         }
         private void es_yes_Click(object sender, EventArgs e)
         {
-            
-
-            if (es_alert == 1)
-            {
-                MessageBox.Show("사이즈를 선택해주세요.");
-            }
-            form.richTextBox1.Text += es_order();
+            ListViewItem order = new ListViewItem(new string[] { "에스프레소 ", Convert.ToString(es_amounts) + "잔 ", Convert.ToString(es_total_value.Text) });
+            form.order_list.Items.Add(order);
+            form.Reset_info();
             this.Close();
         }
 
@@ -111,7 +117,7 @@ namespace Coffee_Shop_Kiosk
         {
             if (MessageBox.Show("진행중인 주문을 취소합니다.", "주문취소", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                //확인시 내용
+                form.Reset_info();
                 this.Close();
             }
         }

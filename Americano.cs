@@ -22,14 +22,11 @@ namespace Coffee_Shop_Kiosk
             form = form1;
         }
 
-
+        
         int am_total_price = 4000;
-        int am_options = 0;
-        int am_options_number = 0;
-        int size = 0;
-        int coldhot_am = 0;
-        int amount = 1;
-
+        static int am_options , am_options_number,size, coldhot_am ;
+        static int amount = 1;
+        
 
         private void am_cold_CheckedChanged(object sender, EventArgs e)
         {
@@ -78,8 +75,6 @@ namespace Coffee_Shop_Kiosk
         }
 
 
-
-
         private void am_numeric_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -99,39 +94,18 @@ namespace Coffee_Shop_Kiosk
         }
 
 
+        
         public void am_UpdatePrice()
         {
-            am_total_price = (am_total_price - am_options + coldhot_am + size) * amount;
-            am_total_value.Text = Convert.ToString(am_total_price);
+            am_total_value.Text = Convert.ToString((am_total_price - am_options + coldhot_am + size) * amount);
         }
-        public string am_order()
-        {
-            string order = null;
-
-            if (coldhot_am == 500) order += " 아이스";
-            else order += " ";
-
-
-            order += " 아메리카노";
-            order += am_total_price + " 원 ";
-            order += Convert.ToString(amount + "개" + "");
-            return order + "\n";
-            /*
-            if (am_options_number == 1) order += " 일회용기,";
-            else if (am_options_number == 2) order += " 매장,";
-            else order += " 텀블러,";
-
-            
-            if (am_numeric.SelectedIndex == 0) order += " 작은컵 \n";
-            else if (am_numeric.SelectedIndex == 1) order += " 중간컵 \n";
-            else order += " 큰컵, \n";
-            */
-
-        }
-
+       
         private void am_yes_Click(object sender, EventArgs e)
         {
-            form.richTextBox1.Text += am_order();
+
+            ListViewItem order = new ListViewItem(new string[] { "아메리카노 ", Convert.ToString(amount) + "잔 ", Convert.ToString(am_total_value.Text)  });
+            form.order_list.Items.Add(order);
+            form.Reset_info();
             this.Close();
         }
 
@@ -139,6 +113,7 @@ namespace Coffee_Shop_Kiosk
         {
             if (MessageBox.Show("진행중인 주문을 취소합니다.", "주문취소", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                form.Reset_info();
                 this.Close();
             }
         }

@@ -74,7 +74,6 @@ namespace Coffee_Shop_Kiosk
             }
             else
                 mo_option2.BackColor = Color.White;
-
         }
 
         private void mo_option3_CheckedChanged(object sender, EventArgs e)
@@ -114,46 +113,25 @@ namespace Coffee_Shop_Kiosk
 
         private void mo_UpdatePrice()
         {
-
             mo_total_value.Text = Convert.ToString((mo_total_price - mo_options + coldhot_mo + mo_sizes) * mo_amounts);
-
         }
 
-        public string mo_order()
-        {
-            string order = null;
-
-            if (coldhot_mo == 500) order += " 아이스";
-            else order += " ";
-
-
-            order += " 모카치노"+ mo_total_price + " 원 "+ mo_amounts + "개";
-
-            return order + "\n";
-            /*
-            if (am_options_number == 1) order += " 일회용기,";
-            else if (am_options_number == 2) order += " 매장,";
-            else order += " 텀블러,";
-
-            
-            if (am_numeric.SelectedIndex == 0) order += " 작은컵 \n";
-            else if (am_numeric.SelectedIndex == 1) order += " 중간컵 \n";
-            else order += " 큰컵, \n";
-            */
-
-        }
+     
+        
 
         private void mo_yes_Click(object sender, EventArgs e)
         {
-            form.richTextBox1.Text += mo_order();
-            this.Close();
+            ListViewItem order = new ListViewItem(new string[] { "카페모카 ", Convert.ToString(mo_amounts) + "잔 ", Convert.ToString(mo_total_value.Text) });
+            form.order_list.Items.Add(order);
+            form.Reset_info();
+            this.Close(); 
         }
 
         private void mo_cancel_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("진행중인 주문을 취소합니다.", "주문취소", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                //확인시 내용
+                form.Reset_info();
                 this.Close();
             }
         }
