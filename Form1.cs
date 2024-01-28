@@ -194,13 +194,19 @@ namespace Coffee_Shop_Kiosk
 
         private void cancel_button_Click(object sender, EventArgs e)
         {
+            
             try
             {
-                order_list.Items.RemoveAt(order_list.FocusedItem.Index);
-            
-            }catch (Exception exp)
+                if (order_list.FocusedItem == null)
+                {
+                    throw new Exception();
+                }
+                int index = order_list.FocusedItem.Index;
+                order_list.Items.RemoveAt(index);
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show("주문한 메뉴를 선택해주세요.");
+                MessageBox.Show("주문한 메뉴를 선택해주세요.","취소하기");
             }
         }
     }

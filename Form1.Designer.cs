@@ -413,6 +413,7 @@
             // 
             order_list.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { menu, amount, price });
             order_list.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            order_list.FullRowSelect = true;
             order_list.HideSelection = false;
             order_list.Location = new System.Drawing.Point(44, 574);
             order_list.Name = "order_list";
