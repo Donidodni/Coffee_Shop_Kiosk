@@ -226,7 +226,7 @@ namespace Coffee_Shop_Kiosk
         private void custom_pay_button_Click(object sender, EventArgs e)
         {
             Custom_menu custom_Menu = new Custom_menu(this);
-            if (MessageBox.Show(custom_menu+ custom_price + "원" + "\n (을)를 주문하겠습니까?", "주문취소", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show(custom_menu+ " : " +  custom_price + "원" + "\n (을)를 주문하겠습니까?", "주문취소", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 ListViewItem order = new ListViewItem(new string[] { custom_menu, "커스텀 주문 : 1잔", Convert.ToString(custom_price) });
                 order_list.Items.Add(order);
