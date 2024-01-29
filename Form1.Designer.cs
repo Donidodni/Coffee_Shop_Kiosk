@@ -220,11 +220,11 @@
             coffee_menu.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("coffee_menu.ImageStream");
             coffee_menu.TransparentColor = System.Drawing.Color.Transparent;
             coffee_menu.Images.SetKeyName(0, "americano.png");
-            coffee_menu.Images.SetKeyName(1, "cappuccino.png");
-            coffee_menu.Images.SetKeyName(2, "espresso.png");
-            coffee_menu.Images.SetKeyName(3, "latte.png");
-            coffee_menu.Images.SetKeyName(4, "mocha.png");
-            coffee_menu.Images.SetKeyName(5, "soylattepng.png");
+            coffee_menu.Images.SetKeyName(1, "Latte.png");
+            coffee_menu.Images.SetKeyName(2, "cappuccino.png");
+            coffee_menu.Images.SetKeyName(3, "espresso.png");
+            coffee_menu.Images.SetKeyName(4, "soylattepng.png");
+            coffee_menu.Images.SetKeyName(5, "mocha.png");
             // 
             // panel2
             // 
@@ -245,7 +245,7 @@
             button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button6.ImageIndex = 5;
+            button6.ImageIndex = 4;
             button6.ImageList = coffee_menu;
             button6.Location = new System.Drawing.Point(299, 158);
             button6.Name = "button6";
@@ -264,7 +264,7 @@
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button5.ImageIndex = 4;
+            button5.ImageIndex = 5;
             button5.ImageList = coffee_menu;
             button5.Location = new System.Drawing.Point(595, 158);
             button5.Name = "button5";
@@ -283,7 +283,7 @@
             button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button3.ImageIndex = 1;
+            button3.ImageIndex = 2;
             button3.ImageList = coffee_menu;
             button3.Location = new System.Drawing.Point(595, 11);
             button3.Name = "button3";
@@ -302,7 +302,7 @@
             button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button4.ImageIndex = 2;
+            button4.ImageIndex = 3;
             button4.ImageList = coffee_menu;
             button4.Location = new System.Drawing.Point(2, 158);
             button4.Name = "button4";
@@ -341,7 +341,7 @@
             button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button2.ImageIndex = 3;
+            button2.ImageIndex = 1;
             button2.ImageList = coffee_menu;
             button2.Location = new System.Drawing.Point(299, 11);
             button2.Name = "button2";

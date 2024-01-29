@@ -8,18 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 
 namespace Coffee_Shop_Kiosk
 {
     public partial class Americano : Form
     {
-
-        Form1? form = null;
+        Form1 form = null;
         public Americano(Form1 form1)
         {
-            InitializeComponent();
-            form = form1;
+            InitializeComponent();;
+            this.form = form1;
         }
 
 
@@ -127,7 +127,6 @@ namespace Coffee_Shop_Kiosk
 
         private void am_yes_Click(object sender, EventArgs e)
         {
-
             ListViewItem order = new ListViewItem(new string[] { "아메리카노 ", Convert.ToString(amount) + "잔 ", Convert.ToString(am_total_value.Text) });
             form.order_list.Items.Add(order);
             form.Reset_info();

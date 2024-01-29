@@ -19,7 +19,7 @@ namespace Coffee_Shop_Kiosk
         static int coffee_menus;
         public string[,] Main_orders = null;
 
-
+        /*
         public Font Font()
         {
             PrivateFontCollection privateFonts = new PrivateFontCollection();
@@ -27,7 +27,7 @@ namespace Coffee_Shop_Kiosk
             Font font = new Font(privateFonts.Families[0], 17f);
             return font;
         }
-
+        */
 
         public void Choose_Button_on()
         {
@@ -94,17 +94,6 @@ namespace Coffee_Shop_Kiosk
             Choose_Button_off();
             order_list.View = View.Details;
 
-            label_time.Font = Font();
-            Main_info.Font = Font();
-
-            button1.Font = Font();
-            button2.Font = Font();
-            button3.Font = Font();
-            button4.Font = Font();
-            button5.Font = Font();
-            button6.Font = Font();
-
-
             Main_info.Text = "원하시는 메뉴를 \n선택해주세요.";
 
             Point point = new Point(65, 80);
@@ -115,7 +104,6 @@ namespace Coffee_Shop_Kiosk
         }
         private void Current_time_Tick(object sender, EventArgs e)
         {
-            time_value.Font = Font();
             time_value.Text = DateTime.Now.ToString();
             if (DateTime.Now.Second <= 30)
                 ad_box.Image = ad_images.Images[0];
