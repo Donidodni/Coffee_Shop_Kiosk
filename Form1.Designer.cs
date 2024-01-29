@@ -68,13 +68,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.Font = new System.Drawing.Font("Technic", 29.2499962F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.Color.Transparent;
             label1.Location = new System.Drawing.Point(0, 14);
-            label1.Margin = new System.Windows.Forms.Padding(13, 0, 13, 0);
+            label1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             label1.Name = "label1";
-            label1.Padding = new System.Windows.Forms.Padding(129, 0, 129, 0);
-            label1.Size = new System.Drawing.Size(573, 57);
+            label1.Padding = new System.Windows.Forms.Padding(100, 0, 100, 0);
+            label1.Size = new System.Drawing.Size(458, 42);
             label1.TabIndex = 1;
             label1.Text = "MOBLE CAFE";
             // 
@@ -82,10 +82,9 @@
             // 
             button7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             button7.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            button7.Location = new System.Drawing.Point(491, 1113);
-            button7.Margin = new System.Windows.Forms.Padding(4);
+            button7.Location = new System.Drawing.Point(382, 835);
             button7.Name = "button7";
-            button7.Size = new System.Drawing.Size(195, 63);
+            button7.Size = new System.Drawing.Size(152, 47);
             button7.TabIndex = 3;
             button7.Text = "결제하기";
             button7.UseVisualStyleBackColor = false;
@@ -94,10 +93,9 @@
             // 
             button8.BackColor = System.Drawing.SystemColors.ActiveCaption;
             button8.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            button8.Location = new System.Drawing.Point(694, 1113);
-            button8.Margin = new System.Windows.Forms.Padding(4);
+            button8.Location = new System.Drawing.Point(540, 835);
             button8.Name = "button8";
-            button8.Size = new System.Drawing.Size(195, 63);
+            button8.Size = new System.Drawing.Size(152, 47);
             button8.TabIndex = 3;
             button8.Text = "취소하기";
             button8.UseVisualStyleBackColor = false;
@@ -112,9 +110,8 @@
             panel1.Controls.Add(label_time);
             panel1.Dock = System.Windows.Forms.DockStyle.Top;
             panel1.Location = new System.Drawing.Point(0, 0);
-            panel1.Margin = new System.Windows.Forms.Padding(4);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(1514, 89);
+            panel1.Size = new System.Drawing.Size(1178, 67);
             panel1.TabIndex = 5;
             // 
             // button10
@@ -125,9 +122,10 @@
             button10.Cursor = System.Windows.Forms.Cursors.Hand;
             button10.FlatAppearance.BorderSize = 0;
             button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button10.Location = new System.Drawing.Point(1456, 33);
+            button10.Location = new System.Drawing.Point(1132, 25);
+            button10.Margin = new System.Windows.Forms.Padding(2);
             button10.Name = "button10";
-            button10.Size = new System.Drawing.Size(30, 30);
+            button10.Size = new System.Drawing.Size(23, 22);
             button10.TabIndex = 10;
             button10.UseVisualStyleBackColor = false;
             button10.Click += button10_Click;
@@ -139,9 +137,10 @@
             button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             button9.FlatAppearance.BorderSize = 0;
             button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button9.Location = new System.Drawing.Point(1411, 33);
+            button9.Location = new System.Drawing.Point(1097, 25);
+            button9.Margin = new System.Windows.Forms.Padding(2);
             button9.Name = "button9";
-            button9.Size = new System.Drawing.Size(30, 30);
+            button9.Size = new System.Drawing.Size(23, 22);
             button9.TabIndex = 10;
             button9.UseVisualStyleBackColor = false;
             // 
@@ -149,13 +148,12 @@
             // 
             time_value.AutoSize = true;
             time_value.BackColor = System.Drawing.Color.Transparent;
-            time_value.Font = new System.Drawing.Font("Pretendard SemiBold", 19.8000011F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            time_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8000011F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             time_value.ForeColor = System.Drawing.Color.Transparent;
-            time_value.Location = new System.Drawing.Point(746, 25);
-            time_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            time_value.Location = new System.Drawing.Point(580, 19);
             time_value.Name = "time_value";
             time_value.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            time_value.Size = new System.Drawing.Size(33, 41);
+            time_value.Size = new System.Drawing.Size(24, 31);
             time_value.TabIndex = 2;
             time_value.Text = "-";
             // 
@@ -163,12 +161,11 @@
             // 
             label_time.AutoSize = true;
             label_time.BackColor = System.Drawing.Color.Transparent;
-            label_time.Font = new System.Drawing.Font("Pretendard SemiBold", 19.8000011F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label_time.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8000011F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label_time.ForeColor = System.Drawing.Color.Transparent;
-            label_time.Location = new System.Drawing.Point(581, 25);
-            label_time.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_time.Location = new System.Drawing.Point(452, 19);
             label_time.Name = "label_time";
-            label_time.Size = new System.Drawing.Size(142, 41);
+            label_time.Size = new System.Drawing.Size(106, 31);
             label_time.TabIndex = 2;
             label_time.Text = "현재 시간";
             // 
@@ -180,11 +177,10 @@
             // 
             Main_info.AutoSize = true;
             Main_info.BackColor = System.Drawing.Color.Transparent;
-            Main_info.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            Main_info.Location = new System.Drawing.Point(76, 80);
-            Main_info.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            Main_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Main_info.Location = new System.Drawing.Point(59, 60);
             Main_info.Name = "Main_info";
-            Main_info.Size = new System.Drawing.Size(153, 36);
+            Main_info.Size = new System.Drawing.Size(87, 20);
             Main_info.TabIndex = 0;
             Main_info.Text = "Main_info";
             Main_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -195,11 +191,10 @@
             Choose_No.BackColor = System.Drawing.Color.White;
             Choose_No.Cursor = System.Windows.Forms.Cursors.Hand;
             Choose_No.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            Choose_No.Font = new System.Drawing.Font("Pretendard", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            Choose_No.Location = new System.Drawing.Point(199, 309);
-            Choose_No.Margin = new System.Windows.Forms.Padding(4);
+            Choose_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Choose_No.Location = new System.Drawing.Point(155, 232);
             Choose_No.Name = "Choose_No";
-            Choose_No.Size = new System.Drawing.Size(109, 45);
+            Choose_No.Size = new System.Drawing.Size(85, 34);
             Choose_No.TabIndex = 8;
             Choose_No.Text = "아니요";
             Choose_No.UseVisualStyleBackColor = false;
@@ -210,11 +205,10 @@
             Choose_Yes.BackColor = System.Drawing.Color.White;
             Choose_Yes.Cursor = System.Windows.Forms.Cursors.Hand;
             Choose_Yes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            Choose_Yes.Font = new System.Drawing.Font("Pretendard", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            Choose_Yes.Location = new System.Drawing.Point(47, 309);
-            Choose_Yes.Margin = new System.Windows.Forms.Padding(4);
+            Choose_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Choose_Yes.Location = new System.Drawing.Point(37, 232);
             Choose_Yes.Name = "Choose_Yes";
-            Choose_Yes.Size = new System.Drawing.Size(109, 45);
+            Choose_Yes.Size = new System.Drawing.Size(85, 34);
             Choose_Yes.TabIndex = 8;
             Choose_Yes.Text = "네";
             Choose_Yes.UseVisualStyleBackColor = false;
@@ -238,10 +232,9 @@
             panel2.Controls.Add(Choose_No);
             panel2.Controls.Add(Choose_Yes);
             panel2.Controls.Add(Main_info);
-            panel2.Location = new System.Drawing.Point(1079, 129);
-            panel2.Margin = new System.Windows.Forms.Padding(4);
+            panel2.Location = new System.Drawing.Point(839, 97);
             panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(364, 403);
+            panel2.Size = new System.Drawing.Size(283, 302);
             panel2.TabIndex = 8;
             // 
             // button6
@@ -250,14 +243,13 @@
             button6.Cursor = System.Windows.Forms.Cursors.Hand;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button6.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button6.ImageIndex = 5;
             button6.ImageList = coffee_menu;
-            button6.Location = new System.Drawing.Point(384, 210);
-            button6.Margin = new System.Windows.Forms.Padding(4);
+            button6.Location = new System.Drawing.Point(299, 158);
             button6.Name = "button6";
-            button6.Size = new System.Drawing.Size(373, 187);
+            button6.Size = new System.Drawing.Size(290, 140);
             button6.TabIndex = 2;
             button6.Text = "돌체라떼     ";
             button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -270,14 +262,13 @@
             button5.Cursor = System.Windows.Forms.Cursors.Hand;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button5.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button5.ImageIndex = 4;
             button5.ImageList = coffee_menu;
-            button5.Location = new System.Drawing.Point(765, 210);
-            button5.Margin = new System.Windows.Forms.Padding(4);
+            button5.Location = new System.Drawing.Point(595, 158);
             button5.Name = "button5";
-            button5.Size = new System.Drawing.Size(373, 187);
+            button5.Size = new System.Drawing.Size(290, 140);
             button5.TabIndex = 2;
             button5.Text = "카페모카     ";
             button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -290,14 +281,13 @@
             button3.Cursor = System.Windows.Forms.Cursors.Hand;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button3.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button3.ImageIndex = 1;
             button3.ImageList = coffee_menu;
-            button3.Location = new System.Drawing.Point(765, 15);
-            button3.Margin = new System.Windows.Forms.Padding(4);
+            button3.Location = new System.Drawing.Point(595, 11);
             button3.Name = "button3";
-            button3.Size = new System.Drawing.Size(373, 187);
+            button3.Size = new System.Drawing.Size(290, 140);
             button3.TabIndex = 2;
             button3.Text = "카푸치노    ";
             button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -310,14 +300,13 @@
             button4.Cursor = System.Windows.Forms.Cursors.Hand;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button4.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button4.ImageIndex = 2;
             button4.ImageList = coffee_menu;
-            button4.Location = new System.Drawing.Point(3, 210);
-            button4.Margin = new System.Windows.Forms.Padding(4);
+            button4.Location = new System.Drawing.Point(2, 158);
             button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(373, 187);
+            button4.Size = new System.Drawing.Size(290, 140);
             button4.TabIndex = 2;
             button4.Text = "에스프레소   ";
             button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -331,14 +320,13 @@
             button1.Cursor = System.Windows.Forms.Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button1.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button1.ImageIndex = 0;
             button1.ImageList = coffee_menu;
-            button1.Location = new System.Drawing.Point(3, 15);
-            button1.Margin = new System.Windows.Forms.Padding(4);
+            button1.Location = new System.Drawing.Point(2, 11);
             button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(373, 187);
+            button1.Size = new System.Drawing.Size(290, 140);
             button1.TabIndex = 2;
             button1.Text = "아메리카노    ";
             button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -351,14 +339,13 @@
             button2.Cursor = System.Windows.Forms.Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button2.Font = new System.Drawing.Font("Pretendard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button2.ImageIndex = 3;
             button2.ImageList = coffee_menu;
-            button2.Location = new System.Drawing.Point(384, 15);
-            button2.Margin = new System.Windows.Forms.Padding(4);
+            button2.Location = new System.Drawing.Point(299, 11);
             button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(373, 187);
+            button2.Size = new System.Drawing.Size(290, 140);
             button2.TabIndex = 2;
             button2.Text = "카페라떼      ";
             button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -374,16 +361,18 @@
             panel3.Controls.Add(button5);
             panel3.Controls.Add(button3);
             panel3.Controls.Add(button4);
-            panel3.Location = new System.Drawing.Point(41, 114);
+            panel3.Location = new System.Drawing.Point(32, 86);
+            panel3.Margin = new System.Windows.Forms.Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new System.Drawing.Size(1010, 440);
+            panel3.Size = new System.Drawing.Size(786, 330);
             panel3.TabIndex = 9;
             // 
             // ad_box
             // 
-            ad_box.Location = new System.Drawing.Point(1079, 562);
+            ad_box.Location = new System.Drawing.Point(839, 422);
+            ad_box.Margin = new System.Windows.Forms.Padding(2);
             ad_box.Name = "ad_box";
-            ad_box.Size = new System.Drawing.Size(364, 228);
+            ad_box.Size = new System.Drawing.Size(283, 171);
             ad_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             ad_box.TabIndex = 11;
             ad_box.TabStop = false;
@@ -400,50 +389,53 @@
             // 
             pay_button.BackColor = System.Drawing.Color.White;
             pay_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            pay_button.Font = new System.Drawing.Font("Pretendard SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            pay_button.Location = new System.Drawing.Point(876, 587);
+            pay_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            pay_button.Location = new System.Drawing.Point(681, 440);
+            pay_button.Margin = new System.Windows.Forms.Padding(2);
             pay_button.Name = "pay_button";
-            pay_button.Size = new System.Drawing.Size(172, 83);
+            pay_button.Size = new System.Drawing.Size(134, 62);
             pay_button.TabIndex = 12;
-            pay_button.Text = "결재하기";
+            pay_button.Text = "결제하기";
             pay_button.UseVisualStyleBackColor = false;
             pay_button.Click += pay_button_Click;
             // 
             // order_list
             // 
             order_list.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { menu, amount, price });
-            order_list.Font = new System.Drawing.Font("Pretendard", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            order_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             order_list.FullRowSelect = true;
             order_list.HideSelection = false;
-            order_list.Location = new System.Drawing.Point(44, 574);
+            order_list.Location = new System.Drawing.Point(34, 430);
+            order_list.Margin = new System.Windows.Forms.Padding(2);
             order_list.Name = "order_list";
-            order_list.Size = new System.Drawing.Size(799, 216);
+            order_list.Size = new System.Drawing.Size(622, 163);
             order_list.TabIndex = 13;
             order_list.UseCompatibleStateImageBehavior = false;
             // 
             // menu
             // 
             menu.Text = "메뉴";
-            menu.Width = 312;
+            menu.Width = 241;
             // 
             // amount
             // 
             amount.Text = "개수";
-            amount.Width = 222;
+            amount.Width = 190;
             // 
             // price
             // 
             price.Text = "가격";
-            price.Width = 222;
+            price.Width = 190;
             // 
             // cancel_button
             // 
             cancel_button.BackColor = System.Drawing.Color.White;
             cancel_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            cancel_button.Font = new System.Drawing.Font("Pretendard SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            cancel_button.Location = new System.Drawing.Point(876, 697);
+            cancel_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            cancel_button.Location = new System.Drawing.Point(681, 523);
+            cancel_button.Margin = new System.Windows.Forms.Padding(2);
             cancel_button.Name = "cancel_button";
-            cancel_button.Size = new System.Drawing.Size(172, 83);
+            cancel_button.Size = new System.Drawing.Size(134, 62);
             cancel_button.TabIndex = 12;
             cancel_button.Text = "취소하기";
             cancel_button.UseVisualStyleBackColor = false;
@@ -451,10 +443,10 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            ClientSize = new System.Drawing.Size(1514, 841);
+            ClientSize = new System.Drawing.Size(1178, 631);
             Controls.Add(order_list);
             Controls.Add(cancel_button);
             Controls.Add(pay_button);
@@ -465,10 +457,10 @@
             Controls.Add(button8);
             Controls.Add(button7);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Margin = new System.Windows.Forms.Padding(4);
             Name = "Form1";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Welcome to the Coffee Shop";
+            Load += Form1_Load;
             Click += Form1_Click;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

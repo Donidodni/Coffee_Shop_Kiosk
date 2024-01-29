@@ -59,12 +59,11 @@
             am_hot.BackColor = System.Drawing.Color.White;
             am_hot.FlatAppearance.BorderSize = 0;
             am_hot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            am_hot.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            am_hot.Location = new System.Drawing.Point(250, 115);
-            am_hot.Margin = new System.Windows.Forms.Padding(4);
+            am_hot.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            am_hot.Location = new System.Drawing.Point(193, 80);
             am_hot.Name = "am_hot";
-            am_hot.Padding = new System.Windows.Forms.Padding(25, 0, 21, 0);
-            am_hot.Size = new System.Drawing.Size(157, 39);
+            am_hot.Padding = new System.Windows.Forms.Padding(19, 0, 16, 0);
+            am_hot.Size = new System.Drawing.Size(128, 34);
             am_hot.TabIndex = 1;
             am_hot.TabStop = true;
             am_hot.Text = "핫(HOT)";
@@ -78,11 +77,10 @@
             am_cold.BackColor = System.Drawing.Color.White;
             am_cold.FlatAppearance.BorderSize = 0;
             am_cold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            am_cold.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            am_cold.Location = new System.Drawing.Point(250, 160);
-            am_cold.Margin = new System.Windows.Forms.Padding(4);
+            am_cold.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            am_cold.Location = new System.Drawing.Point(194, 120);
             am_cold.Name = "am_cold";
-            am_cold.Size = new System.Drawing.Size(158, 39);
+            am_cold.Size = new System.Drawing.Size(126, 34);
             am_cold.TabIndex = 0;
             am_cold.TabStop = true;
             am_cold.Text = "아이스(ICED)";
@@ -92,13 +90,12 @@
             // am_numeric
             // 
             am_numeric.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            am_numeric.Font = new System.Drawing.Font("Pretendard SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            am_numeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             am_numeric.FormattingEnabled = true;
             am_numeric.Items.AddRange(new object[] { "작은컵", "중간컵", "큰컵" });
-            am_numeric.Location = new System.Drawing.Point(228, 213);
-            am_numeric.Margin = new System.Windows.Forms.Padding(4);
+            am_numeric.Location = new System.Drawing.Point(177, 160);
             am_numeric.Name = "am_numeric";
-            am_numeric.Size = new System.Drawing.Size(197, 35);
+            am_numeric.Size = new System.Drawing.Size(154, 30);
             am_numeric.TabIndex = 1;
             am_numeric.Text = "사이즈를 선택하세요.";
             am_numeric.UseWaitCursor = true;
@@ -107,10 +104,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new System.Drawing.Point(21, 115);
-            pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            pictureBox1.Location = new System.Drawing.Point(16, 86);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(183, 169);
+            pictureBox1.Size = new System.Drawing.Size(142, 127);
             pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -120,11 +116,9 @@
             am_option.Controls.Add(am_option3);
             am_option.Controls.Add(am_option2);
             am_option.Controls.Add(am_option1);
-            am_option.Location = new System.Drawing.Point(21, 311);
-            am_option.Margin = new System.Windows.Forms.Padding(4);
+            am_option.Location = new System.Drawing.Point(16, 233);
             am_option.Name = "am_option";
-            am_option.Padding = new System.Windows.Forms.Padding(4);
-            am_option.Size = new System.Drawing.Size(404, 83);
+            am_option.Size = new System.Drawing.Size(314, 62);
             am_option.TabIndex = 2;
             am_option.TabStop = false;
             // 
@@ -135,12 +129,11 @@
             am_option3.BackColor = System.Drawing.Color.White;
             am_option3.FlatAppearance.BorderSize = 0;
             am_option3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            am_option3.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            am_option3.Location = new System.Drawing.Point(281, 24);
-            am_option3.Margin = new System.Windows.Forms.Padding(4);
+            am_option3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            am_option3.Location = new System.Drawing.Point(219, 18);
             am_option3.Name = "am_option3";
-            am_option3.Padding = new System.Windows.Forms.Padding(9, 4, 9, 4);
-            am_option3.Size = new System.Drawing.Size(104, 47);
+            am_option3.Padding = new System.Windows.Forms.Padding(7, 3, 7, 3);
+            am_option3.Size = new System.Drawing.Size(79, 40);
             am_option3.TabIndex = 2;
             am_option3.TabStop = true;
             am_option3.Text = "텀블러";
@@ -154,12 +147,11 @@
             am_option2.BackColor = System.Drawing.Color.White;
             am_option2.FlatAppearance.BorderSize = 0;
             am_option2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            am_option2.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            am_option2.Location = new System.Drawing.Point(153, 24);
-            am_option2.Margin = new System.Windows.Forms.Padding(4);
+            am_option2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            am_option2.Location = new System.Drawing.Point(119, 18);
             am_option2.Name = "am_option2";
-            am_option2.Padding = new System.Windows.Forms.Padding(4);
-            am_option2.Size = new System.Drawing.Size(115, 47);
+            am_option2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            am_option2.Size = new System.Drawing.Size(86, 40);
             am_option2.TabIndex = 1;
             am_option2.TabStop = true;
             am_option2.Text = "매장용컵";
@@ -173,12 +165,11 @@
             am_option1.BackColor = System.Drawing.Color.White;
             am_option1.FlatAppearance.BorderSize = 0;
             am_option1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            am_option1.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            am_option1.Location = new System.Drawing.Point(22, 24);
-            am_option1.Margin = new System.Windows.Forms.Padding(4);
+            am_option1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            am_option1.Location = new System.Drawing.Point(17, 18);
             am_option1.Name = "am_option1";
-            am_option1.Padding = new System.Windows.Forms.Padding(4);
-            am_option1.Size = new System.Drawing.Size(115, 47);
+            am_option1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            am_option1.Size = new System.Drawing.Size(86, 40);
             am_option1.TabIndex = 0;
             am_option1.TabStop = true;
             am_option1.Text = "일회용기";
@@ -188,24 +179,22 @@
             // am_total
             // 
             am_total.AutoSize = true;
-            am_total.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            am_total.Location = new System.Drawing.Point(15, 22);
-            am_total.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            am_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            am_total.Location = new System.Drawing.Point(12, 16);
             am_total.Name = "am_total";
-            am_total.Size = new System.Drawing.Size(89, 29);
+            am_total.Size = new System.Drawing.Size(67, 24);
             am_total.TabIndex = 5;
             am_total.Text = "총 가격:";
             // 
             // numericUpDown1
             // 
             numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            numericUpDown1.Font = new System.Drawing.Font("Pretendard SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            numericUpDown1.Location = new System.Drawing.Point(228, 256);
-            numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
+            numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            numericUpDown1.Location = new System.Drawing.Point(177, 192);
             numericUpDown1.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
             numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new System.Drawing.Size(197, 31);
+            numericUpDown1.Size = new System.Drawing.Size(153, 24);
             numericUpDown1.TabIndex = 6;
             numericUpDown1.Value = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
@@ -215,11 +204,10 @@
             am_yes.BackColor = System.Drawing.Color.White;
             am_yes.FlatAppearance.BorderSize = 0;
             am_yes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            am_yes.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            am_yes.Location = new System.Drawing.Point(73, 522);
-            am_yes.Margin = new System.Windows.Forms.Padding(4);
+            am_yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            am_yes.Location = new System.Drawing.Point(57, 392);
             am_yes.Name = "am_yes";
-            am_yes.Size = new System.Drawing.Size(131, 61);
+            am_yes.Size = new System.Drawing.Size(102, 46);
             am_yes.TabIndex = 7;
             am_yes.Text = "주문하기";
             am_yes.UseVisualStyleBackColor = false;
@@ -230,11 +218,10 @@
             am_cancel.BackColor = System.Drawing.Color.White;
             am_cancel.FlatAppearance.BorderSize = 0;
             am_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            am_cancel.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            am_cancel.Location = new System.Drawing.Point(253, 522);
-            am_cancel.Margin = new System.Windows.Forms.Padding(4);
+            am_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            am_cancel.Location = new System.Drawing.Point(197, 392);
             am_cancel.Name = "am_cancel";
-            am_cancel.Size = new System.Drawing.Size(131, 61);
+            am_cancel.Size = new System.Drawing.Size(102, 46);
             am_cancel.TabIndex = 7;
             am_cancel.Text = "취소하기";
             am_cancel.UseVisualStyleBackColor = false;
@@ -244,12 +231,11 @@
             // 
             am_total_value.AutoSize = true;
             am_total_value.BackColor = System.Drawing.Color.Transparent;
-            am_total_value.Font = new System.Drawing.Font("Pretendard", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            am_total_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             am_total_value.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            am_total_value.Location = new System.Drawing.Point(106, 21);
-            am_total_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            am_total_value.Location = new System.Drawing.Point(82, 16);
             am_total_value.Name = "am_total_value";
-            am_total_value.Size = new System.Drawing.Size(24, 29);
+            am_total_value.Size = new System.Drawing.Size(17, 24);
             am_total_value.TabIndex = 5;
             am_total_value.Text = "-";
             // 
@@ -259,18 +245,20 @@
             panel1.Controls.Add(label1);
             panel1.Dock = System.Windows.Forms.DockStyle.Top;
             panel1.Location = new System.Drawing.Point(0, 0);
+            panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(476, 64);
+            panel1.Size = new System.Drawing.Size(370, 48);
             panel1.TabIndex = 8;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Pretendard SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.Color.Transparent;
-            label1.Location = new System.Drawing.Point(21, 18);
+            label1.Location = new System.Drawing.Point(16, 14);
+            label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(135, 33);
+            label1.Size = new System.Drawing.Size(97, 26);
             label1.TabIndex = 9;
             label1.Text = "아메리카노";
             // 
@@ -279,17 +267,18 @@
             panel2.BackColor = System.Drawing.Color.White;
             panel2.Controls.Add(am_total);
             panel2.Controls.Add(am_total_value);
-            panel2.Location = new System.Drawing.Point(21, 418);
+            panel2.Location = new System.Drawing.Point(16, 314);
+            panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(404, 66);
+            panel2.Size = new System.Drawing.Size(314, 50);
             panel2.TabIndex = 9;
             // 
             // Americano
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.WhiteSmoke;
-            ClientSize = new System.Drawing.Size(476, 635);
+            ClientSize = new System.Drawing.Size(370, 476);
             Controls.Add(panel2);
             Controls.Add(am_cold);
             Controls.Add(am_hot);
@@ -301,7 +290,6 @@
             Controls.Add(pictureBox1);
             Controls.Add(am_numeric);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Margin = new System.Windows.Forms.Padding(4);
             Name = "Americano";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Americano";

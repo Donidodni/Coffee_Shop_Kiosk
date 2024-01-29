@@ -82,14 +82,16 @@ namespace Coffee_Shop_Kiosk
             {
                 mo_option3.BackColor = Color.LightGray;
                 mo_options = 300;
+                mo_UpdatePrice();
             }
             else
             {
                 mo_option3.BackColor = Color.White;
                 mo_options = 0;
+                mo_UpdatePrice();
             }
                 
-            mo_UpdatePrice();
+            
         }
 
 

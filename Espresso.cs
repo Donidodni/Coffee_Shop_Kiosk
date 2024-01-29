@@ -51,13 +51,15 @@ namespace Coffee_Shop_Kiosk
             {
                 es_option1.BackColor = Color.LightGray;
                 es_options = 300;
+                es_UpdatePrice();
             }
             else
             {
                 es_option1.BackColor = Color.White;
                 es_options = 0;
+                es_UpdatePrice();
             }
-            es_UpdatePrice();
+            
         }
 
 
@@ -82,9 +84,7 @@ namespace Coffee_Shop_Kiosk
 
         private void es_UpdatePrice()
         {
-
             es_total_value.Text = Convert.ToString((es_total_price - es_options + es_sizes) * es_amounts);
-
         }
         public string es_order()
         {

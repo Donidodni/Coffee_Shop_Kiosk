@@ -32,13 +32,13 @@ namespace Coffee_Shop_Kiosk
         {
             if (am_cold.Checked == true)
             {
-                am_hot.BackColor = Color.LightGray;
+                am_cold.BackColor = Color.LightGray;
                 coldhot_am = 500;
                 am_UpdatePrice();
             }
             else
             {
-                am_hot.BackColor = Color.White;
+                am_cold.BackColor = Color.White;
                 coldhot_am = 0;
                 am_UpdatePrice();
             }

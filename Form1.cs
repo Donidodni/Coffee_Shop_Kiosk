@@ -20,13 +20,21 @@ namespace Coffee_Shop_Kiosk
         public string[,] Main_orders = null;
 
 
+        public Font Font()
+        {
+            PrivateFontCollection privateFonts = new PrivateFontCollection();
+            privateFonts.AddFontFile("PretendardVariable.ttf");
+            Font font = new Font(privateFonts.Families[0], 17f);
+            return font;
+        }
+
 
         public void Choose_Button_on()
         {
             Choose_Yes.Visible = true; Choose_No.Visible = true;
 
             Choose_Yes.Enabled = true; Choose_No.Enabled = true;
-            Point point = new Point(66, 80);
+            Point point = new Point(55, 80);
             Main_info.Location = point;
         }
 
@@ -73,12 +81,10 @@ namespace Coffee_Shop_Kiosk
         }
         public void Reset_info()
         {
-            Point point = new Point(76, 80);
+            Point point = new Point(65, 80);
             Main_info.Location = point;
             Main_info.Text = "원하시는 메뉴를 \n선택해주세요.";
         }
-
-
 
 
         public Form1()
@@ -88,14 +94,28 @@ namespace Coffee_Shop_Kiosk
             Choose_Button_off();
             order_list.View = View.Details;
 
+            label_time.Font = Font();
+            Main_info.Font = Font();
+
+            button1.Font = Font();
+            button2.Font = Font();
+            button3.Font = Font();
+            button4.Font = Font();
+            button5.Font = Font();
+            button6.Font = Font();
+
+
             Main_info.Text = "원하시는 메뉴를 \n선택해주세요.";
 
-            PrivateFontCollection privateFonts = new PrivateFontCollection();
-            privateFonts.AddFontFile("PretendardVariable.ttf");
+            Point point = new Point(65, 80);
+            Main_info.Location = point;
+
+      
 
         }
         private void Current_time_Tick(object sender, EventArgs e)
         {
+            time_value.Font = Font();
             time_value.Text = DateTime.Now.ToString();
             if (DateTime.Now.Second <= 30)
                 ad_box.Image = ad_images.Images[0];
@@ -194,7 +214,7 @@ namespace Coffee_Shop_Kiosk
 
         private void cancel_button_Click(object sender, EventArgs e)
         {
-            
+
             try
             {
                 if (order_list.FocusedItem == null)
@@ -203,10 +223,15 @@ namespace Coffee_Shop_Kiosk
                 int index = order_list.FocusedItem.Index;
                 order_list.Items.RemoveAt(index);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("주문한 메뉴를 선택해주세요.","취소하기");
+                MessageBox.Show("주문한 메뉴를 선택해주세요.", "취소하기");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -59,12 +59,11 @@
             soy_hot.BackColor = System.Drawing.Color.White;
             soy_hot.FlatAppearance.BorderSize = 0;
             soy_hot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            soy_hot.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            soy_hot.Location = new System.Drawing.Point(250, 115);
-            soy_hot.Margin = new System.Windows.Forms.Padding(4);
+            soy_hot.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_hot.Location = new System.Drawing.Point(194, 79);
             soy_hot.Name = "soy_hot";
-            soy_hot.Padding = new System.Windows.Forms.Padding(21, 0, 25, 0);
-            soy_hot.Size = new System.Drawing.Size(157, 39);
+            soy_hot.Padding = new System.Windows.Forms.Padding(16, 0, 19, 0);
+            soy_hot.Size = new System.Drawing.Size(128, 34);
             soy_hot.TabIndex = 1;
             soy_hot.TabStop = true;
             soy_hot.Text = "핫(HOT)";
@@ -78,11 +77,10 @@
             soy_cold.BackColor = System.Drawing.Color.White;
             soy_cold.FlatAppearance.BorderSize = 0;
             soy_cold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            soy_cold.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            soy_cold.Location = new System.Drawing.Point(250, 160);
-            soy_cold.Margin = new System.Windows.Forms.Padding(4);
+            soy_cold.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_cold.Location = new System.Drawing.Point(194, 120);
             soy_cold.Name = "soy_cold";
-            soy_cold.Size = new System.Drawing.Size(158, 39);
+            soy_cold.Size = new System.Drawing.Size(126, 34);
             soy_cold.TabIndex = 0;
             soy_cold.TabStop = true;
             soy_cold.Text = "아이스(ICED)";
@@ -92,10 +90,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (System.Drawing.Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new System.Drawing.Point(24, 107);
-            pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            pictureBox2.Location = new System.Drawing.Point(19, 80);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new System.Drawing.Size(183, 169);
+            pictureBox2.Size = new System.Drawing.Size(142, 127);
             pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 14;
             pictureBox2.TabStop = false;
@@ -105,11 +102,10 @@
             soy_cancel.BackColor = System.Drawing.Color.White;
             soy_cancel.FlatAppearance.BorderSize = 0;
             soy_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            soy_cancel.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            soy_cancel.Location = new System.Drawing.Point(256, 522);
-            soy_cancel.Margin = new System.Windows.Forms.Padding(4);
+            soy_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_cancel.Location = new System.Drawing.Point(197, 392);
             soy_cancel.Name = "soy_cancel";
-            soy_cancel.Size = new System.Drawing.Size(131, 61);
+            soy_cancel.Size = new System.Drawing.Size(102, 46);
             soy_cancel.TabIndex = 12;
             soy_cancel.Text = "취소하기";
             soy_cancel.UseVisualStyleBackColor = false;
@@ -118,13 +114,12 @@
             // soy_size
             // 
             soy_size.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            soy_size.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_size.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             soy_size.FormattingEnabled = true;
             soy_size.Items.AddRange(new object[] { "작은컵", "중간컵", "큰컵" });
-            soy_size.Location = new System.Drawing.Point(231, 213);
-            soy_size.Margin = new System.Windows.Forms.Padding(4);
+            soy_size.Location = new System.Drawing.Point(178, 160);
             soy_size.Name = "soy_size";
-            soy_size.Size = new System.Drawing.Size(197, 35);
+            soy_size.Size = new System.Drawing.Size(154, 32);
             soy_size.TabIndex = 6;
             soy_size.Text = "사이즈를 선택하세요.";
             soy_size.SelectedIndexChanged += soy_size_SelectedIndexChanged;
@@ -134,11 +129,10 @@
             soy_yes.BackColor = System.Drawing.Color.White;
             soy_yes.FlatAppearance.BorderSize = 0;
             soy_yes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            soy_yes.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            soy_yes.Location = new System.Drawing.Point(76, 522);
-            soy_yes.Margin = new System.Windows.Forms.Padding(4);
+            soy_yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_yes.Location = new System.Drawing.Point(57, 392);
             soy_yes.Name = "soy_yes";
-            soy_yes.Size = new System.Drawing.Size(131, 61);
+            soy_yes.Size = new System.Drawing.Size(102, 46);
             soy_yes.TabIndex = 13;
             soy_yes.Text = "주문하기";
             soy_yes.UseVisualStyleBackColor = false;
@@ -149,11 +143,9 @@
             soy_option.Controls.Add(soy_option3);
             soy_option.Controls.Add(soy_option2);
             soy_option.Controls.Add(soy_option1);
-            soy_option.Location = new System.Drawing.Point(24, 311);
-            soy_option.Margin = new System.Windows.Forms.Padding(4);
+            soy_option.Location = new System.Drawing.Point(17, 233);
             soy_option.Name = "soy_option";
-            soy_option.Padding = new System.Windows.Forms.Padding(4);
-            soy_option.Size = new System.Drawing.Size(405, 83);
+            soy_option.Size = new System.Drawing.Size(315, 62);
             soy_option.TabIndex = 8;
             soy_option.TabStop = false;
             // 
@@ -166,12 +158,11 @@
             soy_option3.Checked = true;
             soy_option3.FlatAppearance.BorderSize = 0;
             soy_option3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            soy_option3.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            soy_option3.Location = new System.Drawing.Point(281, 24);
-            soy_option3.Margin = new System.Windows.Forms.Padding(4);
+            soy_option3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_option3.Location = new System.Drawing.Point(219, 18);
             soy_option3.Name = "soy_option3";
-            soy_option3.Padding = new System.Windows.Forms.Padding(9, 4, 9, 4);
-            soy_option3.Size = new System.Drawing.Size(104, 47);
+            soy_option3.Padding = new System.Windows.Forms.Padding(7, 3, 7, 3);
+            soy_option3.Size = new System.Drawing.Size(79, 40);
             soy_option3.TabIndex = 2;
             soy_option3.TabStop = true;
             soy_option3.Text = "텀블러";
@@ -186,12 +177,11 @@
             soy_option2.BackColor = System.Drawing.Color.White;
             soy_option2.FlatAppearance.BorderSize = 0;
             soy_option2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            soy_option2.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            soy_option2.Location = new System.Drawing.Point(153, 24);
-            soy_option2.Margin = new System.Windows.Forms.Padding(4);
+            soy_option2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_option2.Location = new System.Drawing.Point(119, 18);
             soy_option2.Name = "soy_option2";
-            soy_option2.Padding = new System.Windows.Forms.Padding(4);
-            soy_option2.Size = new System.Drawing.Size(115, 47);
+            soy_option2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            soy_option2.Size = new System.Drawing.Size(86, 40);
             soy_option2.TabIndex = 1;
             soy_option2.Text = "매장용컵";
             soy_option2.UseVisualStyleBackColor = false;
@@ -204,12 +194,11 @@
             soy_option1.BackColor = System.Drawing.Color.White;
             soy_option1.FlatAppearance.BorderSize = 0;
             soy_option1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            soy_option1.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            soy_option1.Location = new System.Drawing.Point(23, 24);
-            soy_option1.Margin = new System.Windows.Forms.Padding(4);
+            soy_option1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_option1.Location = new System.Drawing.Point(18, 18);
             soy_option1.Name = "soy_option1";
-            soy_option1.Padding = new System.Windows.Forms.Padding(4);
-            soy_option1.Size = new System.Drawing.Size(115, 47);
+            soy_option1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            soy_option1.Size = new System.Drawing.Size(86, 40);
             soy_option1.TabIndex = 0;
             soy_option1.Text = "일회용기";
             soy_option1.UseVisualStyleBackColor = false;
@@ -218,13 +207,12 @@
             // soy_amount
             // 
             soy_amount.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            soy_amount.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            soy_amount.Location = new System.Drawing.Point(231, 257);
-            soy_amount.Margin = new System.Windows.Forms.Padding(4);
+            soy_amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_amount.Location = new System.Drawing.Point(178, 193);
             soy_amount.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
             soy_amount.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             soy_amount.Name = "soy_amount";
-            soy_amount.Size = new System.Drawing.Size(198, 31);
+            soy_amount.Size = new System.Drawing.Size(154, 25);
             soy_amount.TabIndex = 11;
             soy_amount.Value = new decimal(new int[] { 1, 0, 0, 0 });
             soy_amount.ValueChanged += soy_amount_ValueChanged;
@@ -232,11 +220,10 @@
             // soy_total
             // 
             soy_total.AutoSize = true;
-            soy_total.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            soy_total.Location = new System.Drawing.Point(18, 21);
-            soy_total.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            soy_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_total.Location = new System.Drawing.Point(14, 16);
             soy_total.Name = "soy_total";
-            soy_total.Size = new System.Drawing.Size(89, 29);
+            soy_total.Size = new System.Drawing.Size(67, 24);
             soy_total.TabIndex = 10;
             soy_total.Text = "총 가격:";
             // 
@@ -244,23 +231,23 @@
             // 
             soy_total_value.AutoSize = true;
             soy_total_value.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            soy_total_value.Font = new System.Drawing.Font("Pretendard SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            soy_total_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             soy_total_value.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            soy_total_value.Location = new System.Drawing.Point(109, 19);
-            soy_total_value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            soy_total_value.Location = new System.Drawing.Point(85, 14);
             soy_total_value.Name = "soy_total_value";
-            soy_total_value.Size = new System.Drawing.Size(24, 29);
+            soy_total_value.Size = new System.Drawing.Size(17, 24);
             soy_total_value.TabIndex = 9;
             soy_total_value.Text = "-";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Pretendard SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.Color.Transparent;
-            label1.Location = new System.Drawing.Point(21, 18);
+            label1.Location = new System.Drawing.Point(16, 14);
+            label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(111, 33);
+            label1.Size = new System.Drawing.Size(80, 26);
             label1.TabIndex = 9;
             label1.Text = "돌체라떼";
             // 
@@ -270,8 +257,9 @@
             panel1.Controls.Add(label1);
             panel1.Dock = System.Windows.Forms.DockStyle.Top;
             panel1.Location = new System.Drawing.Point(0, 0);
+            panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(476, 64);
+            panel1.Size = new System.Drawing.Size(370, 48);
             panel1.TabIndex = 23;
             // 
             // panel2
@@ -279,16 +267,17 @@
             panel2.BackColor = System.Drawing.Color.White;
             panel2.Controls.Add(soy_total);
             panel2.Controls.Add(soy_total_value);
-            panel2.Location = new System.Drawing.Point(24, 418);
+            panel2.Location = new System.Drawing.Point(17, 314);
+            panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(404, 66);
+            panel2.Size = new System.Drawing.Size(314, 50);
             panel2.TabIndex = 24;
             // 
             // SoyLatte
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(476, 635);
+            ClientSize = new System.Drawing.Size(370, 476);
             Controls.Add(panel2);
             Controls.Add(soy_cancel);
             Controls.Add(soy_hot);
@@ -300,6 +289,7 @@
             Controls.Add(panel1);
             Controls.Add(pictureBox2);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             Name = "SoyLatte";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "SoyLatte";
