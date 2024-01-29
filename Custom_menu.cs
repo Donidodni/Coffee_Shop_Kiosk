@@ -24,26 +24,21 @@ namespace Coffee_Shop_Kiosk
         }
         public string menu_select(int toping, int coffee, int coffee_base)
         {
-            Form1 form1 = new Form1();
             string str = string.Empty;
             
             switch (toping)
             {
                 case 0: //토피넛 가루      
                     str += "토피넛 ";
-                    form1.custom_price += 1000;
                     break;
                 case 1: // 휘핑 크림
                     str += "(휘핑) ";
-                    form1.custom_price += 500;
                     break;
                 case 2: // 계피 가루
                     str += "진저 ";
-                    form1.custom_price += 1000;
                     break;
                 case 3: // 카카오 가루 
                     str += "카카오 ";
-                    form1.custom_price += 1200;
                     break;
                 case 4:
                     str += "";
@@ -56,12 +51,10 @@ namespace Coffee_Shop_Kiosk
                     if (coffee == 0) // 기본샷
                     {
                         str += "아메리카노";
-                        form1.custom_price += 2000;
                     }
                     else if (coffee == 1)
                     {
                         str += "더블샷 아메리카노";
-                        form1.custom_price += 2300;
                     }
                     break;
 
@@ -69,12 +62,10 @@ namespace Coffee_Shop_Kiosk
                     if (coffee == 0) // 기본샷
                     {
                         str += "아이스 아메리카노";
-                        form1.custom_price += 2500;
                     }
                     else if (coffee == 1)
                     {
                         str += "더블샷 아이스 아메리카노";
-                        form1.custom_price += 2800;
                     }
                     break;
 
@@ -82,34 +73,28 @@ namespace Coffee_Shop_Kiosk
                     if (coffee == 0) // 기본샷
                     {
                         str += "카페라떼";
-                        form1.custom_price += 3000;
                     }
                     else if (coffee == 1)
                     {
                         str += "더블샷 카페라떼";
-                        form1.custom_price += 3300;
                     }
                     else if (coffee == 2)
                     {
                         str += "카푸치노";
-                        form1.custom_price += 3000;
                     }
                     break;
                 case 3: // 차가운 우유
                     if (coffee == 0) // 기본샷
                     {
                         str += "아이스 카페라떼";
-                        form1.custom_price += 3500;
                     }
                     else if (coffee == 1)
                     {
                         str += "더블샷 아이스 카페라떼";
-                        form1.custom_price += 3800;
                     }
                     else if (coffee == 2)
                     { 
                         str += "아이스 카푸치노";
-                        form1.custom_price += 3500;
                     }
                     break;
                 default:
