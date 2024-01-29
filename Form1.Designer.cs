@@ -31,8 +31,6 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new System.Windows.Forms.Label();
-            button7 = new System.Windows.Forms.Button();
-            button8 = new System.Windows.Forms.Button();
             panel1 = new System.Windows.Forms.Panel();
             button10 = new System.Windows.Forms.Button();
             button9 = new System.Windows.Forms.Button();
@@ -50,7 +48,6 @@
             button4 = new System.Windows.Forms.Button();
             button1 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
-            panel3 = new System.Windows.Forms.Panel();
             ad_box = new System.Windows.Forms.PictureBox();
             ad_images = new System.Windows.Forms.ImageList(components);
             pay_button = new System.Windows.Forms.Button();
@@ -59,46 +56,40 @@
             amount = new System.Windows.Forms.ColumnHeader();
             price = new System.Windows.Forms.ColumnHeader();
             cancel_button = new System.Windows.Forms.Button();
+            tabControl1 = new System.Windows.Forms.TabControl();
+            tabPage1 = new System.Windows.Forms.TabPage();
+            tabPage2 = new System.Windows.Forms.TabPage();
+            label4 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            custom_pay_button = new System.Windows.Forms.Button();
+            base_button = new System.Windows.Forms.ComboBox();
+            coffee_box = new System.Windows.Forms.ComboBox();
+            toping_box = new System.Windows.Forms.ComboBox();
+            pictureBox2 = new System.Windows.Forms.PictureBox();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ad_box).BeginInit();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Technic", 29.2499962F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.Font = new System.Drawing.Font("Cascadia Code", 29.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.Color.Transparent;
-            label1.Location = new System.Drawing.Point(0, 14);
+            label1.Location = new System.Drawing.Point(0, 8);
             label1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             label1.Name = "label1";
             label1.Padding = new System.Windows.Forms.Padding(100, 0, 100, 0);
-            label1.Size = new System.Drawing.Size(458, 42);
+            label1.Size = new System.Drawing.Size(452, 51);
             label1.TabIndex = 1;
             label1.Text = "MOBLE CAFE";
-            // 
-            // button7
-            // 
-            button7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            button7.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            button7.Location = new System.Drawing.Point(382, 835);
-            button7.Name = "button7";
-            button7.Size = new System.Drawing.Size(152, 47);
-            button7.TabIndex = 3;
-            button7.Text = "결제하기";
-            button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            button8.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            button8.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            button8.Location = new System.Drawing.Point(540, 835);
-            button8.Name = "button8";
-            button8.Size = new System.Drawing.Size(152, 47);
-            button8.TabIndex = 3;
-            button8.Text = "취소하기";
-            button8.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -177,10 +168,10 @@
             // 
             Main_info.AutoSize = true;
             Main_info.BackColor = System.Drawing.Color.Transparent;
-            Main_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Main_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Main_info.Location = new System.Drawing.Point(59, 60);
             Main_info.Name = "Main_info";
-            Main_info.Size = new System.Drawing.Size(87, 20);
+            Main_info.Size = new System.Drawing.Size(126, 29);
             Main_info.TabIndex = 0;
             Main_info.Text = "Main_info";
             Main_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -247,7 +238,7 @@
             button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button6.ImageIndex = 4;
             button6.ImageList = coffee_menu;
-            button6.Location = new System.Drawing.Point(299, 158);
+            button6.Location = new System.Drawing.Point(303, 153);
             button6.Name = "button6";
             button6.Size = new System.Drawing.Size(290, 140);
             button6.TabIndex = 2;
@@ -266,7 +257,7 @@
             button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button5.ImageIndex = 5;
             button5.ImageList = coffee_menu;
-            button5.Location = new System.Drawing.Point(595, 158);
+            button5.Location = new System.Drawing.Point(599, 153);
             button5.Name = "button5";
             button5.Size = new System.Drawing.Size(290, 140);
             button5.TabIndex = 2;
@@ -285,7 +276,7 @@
             button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button3.ImageIndex = 2;
             button3.ImageList = coffee_menu;
-            button3.Location = new System.Drawing.Point(595, 11);
+            button3.Location = new System.Drawing.Point(599, 6);
             button3.Name = "button3";
             button3.Size = new System.Drawing.Size(290, 140);
             button3.TabIndex = 2;
@@ -304,7 +295,7 @@
             button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button4.ImageIndex = 3;
             button4.ImageList = coffee_menu;
-            button4.Location = new System.Drawing.Point(2, 158);
+            button4.Location = new System.Drawing.Point(6, 153);
             button4.Name = "button4";
             button4.Size = new System.Drawing.Size(290, 140);
             button4.TabIndex = 2;
@@ -324,7 +315,7 @@
             button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button1.ImageIndex = 0;
             button1.ImageList = coffee_menu;
-            button1.Location = new System.Drawing.Point(2, 11);
+            button1.Location = new System.Drawing.Point(6, 6);
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(290, 140);
             button1.TabIndex = 2;
@@ -343,7 +334,7 @@
             button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button2.ImageIndex = 1;
             button2.ImageList = coffee_menu;
-            button2.Location = new System.Drawing.Point(299, 11);
+            button2.Location = new System.Drawing.Point(303, 6);
             button2.Name = "button2";
             button2.Size = new System.Drawing.Size(290, 140);
             button2.TabIndex = 2;
@@ -351,21 +342,6 @@
             button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
-            // 
-            // panel3
-            // 
-            panel3.AutoScroll = true;
-            panel3.Controls.Add(button2);
-            panel3.Controls.Add(button6);
-            panel3.Controls.Add(button1);
-            panel3.Controls.Add(button5);
-            panel3.Controls.Add(button3);
-            panel3.Controls.Add(button4);
-            panel3.Location = new System.Drawing.Point(32, 86);
-            panel3.Margin = new System.Windows.Forms.Padding(2);
-            panel3.Name = "panel3";
-            panel3.Size = new System.Drawing.Size(786, 330);
-            panel3.TabIndex = 9;
             // 
             // ad_box
             // 
@@ -441,21 +417,157 @@
             cancel_button.UseVisualStyleBackColor = false;
             cancel_button.Click += cancel_button_Click;
             // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            tabControl1.Location = new System.Drawing.Point(16, 73);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.ShowToolTips = true;
+            tabControl1.Size = new System.Drawing.Size(799, 347);
+            tabControl1.TabIndex = 14;
+            // 
+            // tabPage1
+            // 
+            tabPage1.AutoScroll = true;
+            tabPage1.Controls.Add(button2);
+            tabPage1.Controls.Add(button1);
+            tabPage1.Controls.Add(button6);
+            tabPage1.Controls.Add(button4);
+            tabPage1.Controls.Add(button3);
+            tabPage1.Controls.Add(button5);
+            tabPage1.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            tabPage1.Location = new System.Drawing.Point(4, 32);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            tabPage1.Size = new System.Drawing.Size(791, 311);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "간편 주문";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(label4);
+            tabPage2.Controls.Add(label3);
+            tabPage2.Controls.Add(label2);
+            tabPage2.Controls.Add(custom_pay_button);
+            tabPage2.Controls.Add(base_button);
+            tabPage2.Controls.Add(coffee_box);
+            tabPage2.Controls.Add(toping_box);
+            tabPage2.Controls.Add(pictureBox2);
+            tabPage2.Controls.Add(pictureBox1);
+            tabPage2.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            tabPage2.Location = new System.Drawing.Point(4, 32);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            tabPage2.Size = new System.Drawing.Size(791, 311);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "커스텀 주문";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(361, 39);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(90, 25);
+            label4.TabIndex = 2;
+            label4.Text = "토핑 선택";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(361, 122);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(90, 25);
+            label3.TabIndex = 2;
+            label3.Text = "커피 선택";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(373, 207);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(66, 25);
+            label2.TabIndex = 2;
+            label2.Text = "베이스";
+            // 
+            // custom_pay_button
+            // 
+            custom_pay_button.BackColor = System.Drawing.Color.White;
+            custom_pay_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            custom_pay_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            custom_pay_button.Location = new System.Drawing.Point(600, 128);
+            custom_pay_button.Margin = new System.Windows.Forms.Padding(2);
+            custom_pay_button.Name = "custom_pay_button";
+            custom_pay_button.Size = new System.Drawing.Size(147, 72);
+            custom_pay_button.TabIndex = 12;
+            custom_pay_button.Text = "주문하기";
+            custom_pay_button.UseVisualStyleBackColor = false;
+            custom_pay_button.Click += custom_pay_button_Click;
+            // 
+            // base_button
+            // 
+            base_button.FormattingEnabled = true;
+            base_button.Items.AddRange(new object[] { "따듯한 물", "차가운 물", "따듯한 우유", "차가운 우유" });
+            base_button.Location = new System.Drawing.Point(300, 234);
+            base_button.Name = "base_button";
+            base_button.Size = new System.Drawing.Size(217, 31);
+            base_button.TabIndex = 1;
+            // 
+            // coffee_box
+            // 
+            coffee_box.FormattingEnabled = true;
+            coffee_box.Items.AddRange(new object[] { "기본 샷", "더블 샷", "기본샷 + 우유 거품" });
+            coffee_box.Location = new System.Drawing.Point(300, 149);
+            coffee_box.Name = "coffee_box";
+            coffee_box.Size = new System.Drawing.Size(217, 31);
+            coffee_box.TabIndex = 1;
+            // 
+            // toping_box
+            // 
+            toping_box.FormattingEnabled = true;
+            toping_box.Items.AddRange(new object[] { "토피넛 가루", "휘핑 크림", "계피 가루", "카카오 가루", "없음" });
+            toping_box.Location = new System.Drawing.Point(300, 67);
+            toping_box.Name = "toping_box";
+            toping_box.Size = new System.Drawing.Size(217, 31);
+            toping_box.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (System.Drawing.Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new System.Drawing.Point(96, -19);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new System.Drawing.Size(150, 145);
+            pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new System.Drawing.Point(24, 128);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(291, 266);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            ClientSize = new System.Drawing.Size(1178, 631);
+            ClientSize = new System.Drawing.Size(1178, 624);
+            Controls.Add(tabControl1);
             Controls.Add(order_list);
             Controls.Add(cancel_button);
             Controls.Add(pay_button);
             Controls.Add(ad_box);
-            Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(button8);
-            Controls.Add(button7);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Name = "Form1";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -466,16 +578,19 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ad_box).EndInit();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label time_value;
         private System.Windows.Forms.Label label_time;
@@ -491,7 +606,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox ad_box;
@@ -503,5 +617,17 @@
         private System.Windows.Forms.ColumnHeader price;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button cancel_button;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button custom_pay_button;
+        public System.Windows.Forms.ComboBox base_button;
+        public System.Windows.Forms.ComboBox coffee_box;
+        public System.Windows.Forms.ComboBox toping_box;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

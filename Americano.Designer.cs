@@ -150,7 +150,7 @@
             am_option2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             am_option2.Location = new System.Drawing.Point(119, 18);
             am_option2.Name = "am_option2";
-            am_option2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            am_option2.Padding = new System.Windows.Forms.Padding(3);
             am_option2.Size = new System.Drawing.Size(86, 40);
             am_option2.TabIndex = 1;
             am_option2.TabStop = true;
@@ -168,7 +168,7 @@
             am_option1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             am_option1.Location = new System.Drawing.Point(17, 18);
             am_option1.Name = "am_option1";
-            am_option1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            am_option1.Padding = new System.Windows.Forms.Padding(3);
             am_option1.Size = new System.Drawing.Size(86, 40);
             am_option1.TabIndex = 0;
             am_option1.TabStop = true;
@@ -245,7 +245,7 @@
             panel1.Controls.Add(label1);
             panel1.Dock = System.Windows.Forms.DockStyle.Top;
             panel1.Location = new System.Drawing.Point(0, 0);
-            panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            panel1.Margin = new System.Windows.Forms.Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new System.Drawing.Size(370, 48);
             panel1.TabIndex = 8;
@@ -268,7 +268,7 @@
             panel2.Controls.Add(am_total);
             panel2.Controls.Add(am_total_value);
             panel2.Location = new System.Drawing.Point(16, 314);
-            panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            panel2.Margin = new System.Windows.Forms.Padding(2);
             panel2.Name = "panel2";
             panel2.Size = new System.Drawing.Size(314, 50);
             panel2.TabIndex = 9;

@@ -70,7 +70,7 @@
             panel1.Controls.Add(label1);
             panel1.Dock = System.Windows.Forms.DockStyle.Top;
             panel1.Location = new System.Drawing.Point(0, 0);
-            panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            panel1.Margin = new System.Windows.Forms.Padding(2);
             panel1.Name = "panel1";
             panel1.Size = new System.Drawing.Size(370, 48);
             panel1.TabIndex = 24;
@@ -83,7 +83,7 @@
             mo_hot.FlatAppearance.BorderSize = 0;
             mo_hot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             mo_hot.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            mo_hot.Location = new System.Drawing.Point(194, 86);
+            mo_hot.Location = new System.Drawing.Point(194, 79);
             mo_hot.Name = "mo_hot";
             mo_hot.Padding = new System.Windows.Forms.Padding(16, 0, 19, 0);
             mo_hot.Size = new System.Drawing.Size(128, 34);
@@ -114,7 +114,7 @@
             panel2.Controls.Add(mo_total);
             panel2.Controls.Add(mo_total_value);
             panel2.Location = new System.Drawing.Point(19, 313);
-            panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            panel2.Margin = new System.Windows.Forms.Padding(2);
             panel2.Name = "panel2";
             panel2.Size = new System.Drawing.Size(314, 50);
             panel2.TabIndex = 33;
@@ -224,7 +224,7 @@
             mo_option2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             mo_option2.Location = new System.Drawing.Point(120, 19);
             mo_option2.Name = "mo_option2";
-            mo_option2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            mo_option2.Padding = new System.Windows.Forms.Padding(3);
             mo_option2.Size = new System.Drawing.Size(86, 40);
             mo_option2.TabIndex = 1;
             mo_option2.Text = "매장용컵";
@@ -241,7 +241,7 @@
             mo_option1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             mo_option1.Location = new System.Drawing.Point(19, 19);
             mo_option1.Name = "mo_option1";
-            mo_option1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            mo_option1.Padding = new System.Windows.Forms.Padding(3);
             mo_option1.Size = new System.Drawing.Size(86, 40);
             mo_option1.TabIndex = 0;
             mo_option1.Text = "일회용기";
@@ -287,7 +287,7 @@
             Controls.Add(mo_cold);
             Controls.Add(panel1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            Margin = new System.Windows.Forms.Padding(2);
             Name = "Mocha";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Mocha";

@@ -102,7 +102,6 @@ namespace Coffee_Shop_Kiosk
 
         private void am_numeric_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             if (am_numeric.SelectedIndex == 0)
                 size = 0;
             else if (am_numeric.SelectedIndex == 1)

@@ -21,7 +21,7 @@ namespace Coffee_Shop_Kiosk
             this.form = form1;  
         }
 
-        int cap_total_price = 4300;
+        int cap_total_price = 4300;   
         int cap_options = 0;
         int cap_sizes = 0;
         int coldhot_cap = 0;

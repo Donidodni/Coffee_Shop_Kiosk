@@ -17,7 +17,8 @@ namespace Coffee_Shop_Kiosk
     public partial class Form1 : Form
     {
         static int coffee_menus;
-        public string[,] Main_orders = null;
+        public string custom_menu = null;
+        public int custom_price = 0;
 
         /*
         public Font Font()
@@ -99,7 +100,7 @@ namespace Coffee_Shop_Kiosk
             Point point = new Point(65, 80);
             Main_info.Location = point;
 
-      
+
 
         }
         private void Current_time_Tick(object sender, EventArgs e)
@@ -220,6 +221,17 @@ namespace Coffee_Shop_Kiosk
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void custom_pay_button_Click(object sender, EventArgs e)
+        {
+            Custom_menu custom_Menu = new Custom_menu(this);
+            if (MessageBox.Show(custom_menu+ custom_price + "\n 를 주문하겠습니까?", "주문취소", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                ListViewItem order = new ListViewItem(new string[] { custom_menu, "커스텀 주문 : 1잔", Convert.ToString(custom_price) });
+                order_list.Items.Add(order);
+                Reset_info();
+            }
         }
     }
 }
